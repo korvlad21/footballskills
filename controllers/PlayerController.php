@@ -9,6 +9,7 @@ use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use yii\web\NotFoundHttpException;
 use app\models\search\PlayerSearch;
+use app\models\Player;
 use kartik\grid\EditableColumnAction;
 
 class PlayerController extends AppController
@@ -48,21 +49,15 @@ class PlayerController extends AppController
 
     public function actionCreate()
     {
-        $model = new Article();
-        $model->date = date('d.m.Y');
-        if ($model->load(Yii::$app->request->post())) {
-
-            $model->date = empty($model->date) ? date("Y-m-d H:i:s") : $model->date;
+        $model = new Player();
+        $model->birthday = date('d.m.Y');
+        if ($model->load( Yii::$app->request->post())) {
+            
+            $model->birthday=date('Y-m-d', strtotime($model->birthday));
             $res = $model->save();
-
             if (!$res) {
                 var_dump($model->getErrors());
                 exit;
-            }
-
-            $model->image = UploadedFile::getInstance($model, 'image');
-            if (!empty($model->image)) {
-                $model->upload('image', $this->max_width, $this->max_height);
             }
 
             return $this->redirect(['update', 'id' => $model->id]);
@@ -70,35 +65,34 @@ class PlayerController extends AppController
 
             return $this->render('create', [
                 'model' => $model,
-                'seo' => $model->getSeo(),
             ]);
         }
     }
 
     public function actionUpdate($id)
     {
-        $model = Article::getModelById($id);
-        $model->getDate();
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $model->image = UploadedFile::getInstance($model, 'image');
-            if (!empty($model->image)) {
-                $model->upload('image', $this->max_width, $this->max_height);
+        $model = Player::getModelById($id);
+        $model->getBirthday();
+        if ($model->load(Yii::$app->request->post())) {
+            $model->birthday=date('Y-m-d', strtotime($model->birthday));
+            $res = $model->save();
+            if (!$res) {
+                var_dump($model->getErrors());
+                exit;
             }
+            
             return $this->redirect(['update', 'id' => $model->id]);
         } else {
-            return $this->render('create', [
+            return $this->render('update', [
                 'model' => $model,
-                'seo' => $model->getSeo(),
             ]);
         }
     }
 
     public function actionDelete($id)
     {
-        $model = Article::getModelById($id);
+        $model = Player::getModelById($id);
         $model->is_delete = 1;
-        $model->removeImages();
         $model->save();
         return $this->redirect(['index']);
     }

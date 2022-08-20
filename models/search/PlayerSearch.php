@@ -11,12 +11,14 @@ use app\models\Player;
  */
 class PlayerSearch extends Player
 {
+    public $birthday_start;
+    public $birthday_end;
 
     public function rules()
     {
         return [
             [['id', 'created_at', 'updated_at', 'position'], 'integer'],
-            [['surname', 'name', 'otchestvo'], 'safe'],
+            [['surname', 'name', 'otchestvo', 'birthday_start', 'birthday_end'], 'safe'],
         ];
     }
 
@@ -41,6 +43,7 @@ class PlayerSearch extends Player
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'sort'=> ['defaultOrder' => ['id'=>SORT_DESC]]
         ]);
 
 
@@ -59,17 +62,25 @@ class PlayerSearch extends Player
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'created_at' => $this->created_at,
-            'updated_at' => $this->updated_at,
-            'date' => $this->date,
+            // 'date' => $this->date,
         ]);
-
-        $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['=', 'Player_category_id', $this->Player_category_id])
-            ->andFilterWhere(['like', 'text', $this->text]);
+        if ( ! empty( $this->birthday_start ) 
+            && ! empty( $this->birthday_end ) 
+        )
+        {
+            $query->andFilterWhere(['and',
+            ['>=', 'birthday', $this->birthday_start],
+            ['<=', 'birthday',  $this->birthday_end]
+            ]);
+        }
+        
+        $query->andFilterWhere(['like', 'surname', $this->surname])
+        ->andFilterWhere(['like', 'name', $this->name])
+        ->andFilterWhere(['like', 'otchestvo', $this->otchestvo])
+            ->andFilterWhere(['=', 'position', $this->position]);
 
         if (!isset($params['sort']) && empty($params['sort'])) {
-            $query->orderBy('date DESC');
+            $query->orderBy('id DESC');
         }
 
 

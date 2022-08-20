@@ -2,11 +2,11 @@
 
 use yii\helpers\Html;
 
-$this->title = 'Редактирование новости ' . $model->name;
-$this->params['breadcrumbs'][] = ['label' => 'Новости', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $model->name;
+$this->title = 'Обновление футболиста ' . $model->surname.' '.substr($model->name, 0, 2).'. '.substr($model->otchestvo, 0, 2);
+$this->params['breadcrumbs'][] = ['label' => 'Футболисты', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $model->surname.' '.substr($model->name, 0, 2).'. '.substr($model->otchestvo, 0, 2);
 ?>
-<div class="article-update">
+<div class="player-update">
 	<div class="row">
 		<div class="col-sm-10">
 			<div class="box">

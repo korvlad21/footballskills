@@ -3,17 +3,35 @@
 namespace app\models;
 
 use Yii;
-use yii\behaviors\TimestampBehavior;
+use yii\db\Expression;
+use app\models\AppModel;
 use yii\db\ActiveRecord;
+use yii\behaviors\TimestampBehavior;
 
-class Player extends ActiveRecord
+class Player extends AppModel
 {
 
     public $image;
+
+    const NAME_POSITION = [
+        1 => 'Вратарь',
+        2 => 'Защитник',
+        3 => 'Полузащитник',
+        4 => 'Нападающий',
+    ];
     public function behaviors()
     {
         return [
-            TimestampBehavior::class,
+            [
+                'class' => TimestampBehavior::class,
+                'attributes' => [
+                    ActiveRecord::EVENT_BEFORE_INSERT => ['created_at', 'updated_at'],
+                    ActiveRecord::EVENT_BEFORE_UPDATE => ['updated_at'],
+                ],
+                // если вместо метки времени UNIX используется datetime:
+                 'value' => new Expression('NOW()'),
+            ],
+             
         ];
     }
 
@@ -29,9 +47,10 @@ class Player extends ActiveRecord
             [['surname'], 'string', 'max' => 200],
             [['name'], 'string', 'max' => 200],
             [['otchestvo'], 'string', 'max' => 200],
-            [['position', 'created_at', 'updated_at','is_delete'], 'integer'],
+            [['position', 'is_delete'], 'integer'],
             [['birthday'], 'required'],
-            ['birthday', 'datetime', 'timestampAttribute' => 'date', 'format' => 'php:d.m.Y'],
+            ['birthday', 'date',  'format' => 'php:Y-m-d'],
+            [['created_at', 'updated_at'], 'safe'],
 
         ];
     }
@@ -39,11 +58,11 @@ class Player extends ActiveRecord
     public function attributeLabels()
     {
         return [
-            'surname' => 'Название',
-            'name' => 'Название',
-            'otchestvo' => 'Краткое описание',
-            'position' => 'Контент',
-            'birthday' => 'Превью',
+            'surname' => 'Фамилия',
+            'name' => 'Имя',
+            'otchestvo' => 'Отчество',
+            'position' => 'Позиция',
+            'birthday' => 'Дата рождения',
             'is_delete' => 'Отметка удаления',
             'created_at' => 'Дата создания',
             'updated_at' => 'Дата обновления',
@@ -59,8 +78,31 @@ class Player extends ActiveRecord
 
 
     public function getBirthday()
+    {   
+        return $this->birthday = date('d.m.Y', strtotime($this->birthday));
+    }
+
+    public function getPositionName()
     {
-        return $this->birthday = date('d.m.Y', $this->birthday);
+        return self::NAME_POSITION[$this->position];
+    }
+
+    public static function getPositionStatic($id = null)
+    {
+        if (is_null($id)) {
+            return self::NAME_POSITION[count(self::NAME_POSITION)];
+        }
+
+        if (!isset($constatnt[$id])) {
+            return self::NAME_POSITION[count(self::NAME_POSITION)];
+        }
+
+        return $constatnt[$id];
+    }
+
+    public function getPosition($id = null)
+    {
+        return self::getPositionStatic(is_null($id) ? $this->position : $id);
     }
 
 }

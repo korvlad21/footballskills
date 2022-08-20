@@ -2,10 +2,11 @@
 
 use yii\helpers\Html;
 
-$this->title = 'Добавление новости';
-$this->params['breadcrumbs'][] = ['label' => 'Новости', 'url' => ['index']];
+$this->title = 'Добавление футболиста';
+$this->params['breadcrumbs'][] = ['label' => 'Футболисты', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="article-create">
+<div class="player-create">
 	<div class="row">
 		<div class="col-sm-10">
 			<div class="box">
@@ -15,7 +16,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Новости', 'url' => ['index'
 					</div>
 				</div>
 				<div class="box-body">
-					<?= $this->render('_form', ['model' => $model, 'seo' => $seo]) ?>
+					<?= $this->render('_form', ['model' => $model]) ?>
 				</div>
 			</div>
 		</div>
