@@ -1,0 +1,71 @@
+.product-testing-id-video-li{
+    font-size:12px;
+}
+
+a .text-white {
+    color: #fff;
+}
+
+.button_closePr{
+    float: left;
+    margin-right: 15px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    width: 25px;
+    height: 25px;
+    padding: 1px 4px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);  
+    z-index: 1;
+    position: relative;
+}
+.button_closePr:hover{
+    color: #fff;
+    background-color: #1d4205;
+    border-color:  #1d4205;
+}
+.coiuntCharPr{
+    margin-bottom: 5px;
+    margin-top: -16px;
+    display: block
+
+}
+[data-button-no-active-pr='true']{
+    background: #999;
+    border-color: #999;
+    cursor: initial;
+    pointer-events: none;
+}
+.new_orders{
+    background-color: #ffc2a2 !important;
+}
+
+.work{
+    background-color: #c8fcdc !important; 
+}
+
+.done{
+    background-color: #ffffff !important;
+}
+
+.cansel{
+    background-color: #c9cdc9 !important;
+}
+.wrong{
+    background-color: #f4c2c2 !important;
+}
+
+.review_status_true{
+    color:#1d4205;
+    border-bottom: 0!important;
+}
+
+.review_status_false{
+    color:#D44743;
+    border-bottom: 0!important;
+}
+
+.glyphicon{
+   font-size: 15px !important;
+}

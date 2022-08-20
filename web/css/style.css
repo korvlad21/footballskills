@@ -1,0 +1,727 @@
+/*---------- шапка ----------*/
+.main-header {
+  z-index: 10;
+}
+
+.main-header .navbar {
+  background: #060c1a;
+}
+
+/*кнопка сворачивания меню*/
+.sidebar-toggle {
+  color: #fff;
+}
+
+.main-header .sidebar-toggle:focus {
+  color: #fff;
+}
+
+.main-header .sidebar-toggle:active,
+.main-header .sidebar-toggle:hover {
+  color: #1d4205;
+}
+
+/*название сайта*/
+.site-name {
+  float: left;
+  margin-left: 30px;
+  font: 300 20px/50px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
+.site-favicon {
+  float: left;
+  width: 36px;
+  margin: 7px 15px 0 0;
+  /*border: 1px solid #1d4205;*/
+  border-radius: 2px;
+  box-shadow: 0 0 3px #1d4205;
+}
+
+/*пользователь*/
+.navbar-custom-menu {
+  margin-right: 15px;
+}
+
+.navbar-nav > li + li {
+  margin-left: 10px;
+}
+
+.nav > li > a {
+  padding: 8px 15px;
+  border-radius: 0 0 4px 4px;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.main-header .navbar .nav > li.user > a > .fa {
+  font-size: 25px;
+  line-height: 34px;
+  margin: 0;
+}
+
+.nav > li > a .fa_caption {
+  vertical-align: 4px;
+  margin-left: 3px;
+  font-size: 16px;
+}
+
+.nav > li > a:focus {
+  color: #fff;
+  background: transparent;
+  transform: none;
+}
+
+.nav > li > a:hover,
+.nav > li > a:active {
+  color: #fff;
+  background: #1d4205;
+  transform: translateY(3px);
+}
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  color: #fff;
+  background: #1d4205;
+  transform: translateY(3px);
+}
+
+.navbar-nav > .user-menu > .dropdown-menu {
+  padding: 0 0 10px;
+  z-index: -1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.user-neme {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #1d4205;
+}
+
+.navbar-nav > .user-menu > .dropdown-menu .fa {
+  color: #1d4205;
+}
+
+.navbar-nav > .user-menu > .dropdown-menu a {
+  color: #313131;
+}
+
+.navbar-nav > .user-menu > .dropdown-menu a:focus,
+.navbar-nav > .user-menu > .dropdown-menu a:hover,
+.navbar-nav > .user-menu > .dropdown-menu a:active {
+  color: #313131;
+  background: rgba(0, 194, 212, 0.1);
+}
+
+.dropdown-menu > li button {
+  display: block;
+  width: 100%;
+  padding: 3px 20px;
+  border: none;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: left;
+  white-space: nowrap;
+  color: #333333;
+  background: transparent;
+}
+
+.dropdown-menu > li button:focus,
+.dropdown-menu > li button:hover {
+  color: #313131;
+  background: rgba(0, 194, 212, 0.1);
+  outline: none;
+}
+
+.dropdown-menu > li button .fa {
+  margin-right: 10px;
+}
+/*---------- шапка ----------*/
+
+/*---------- меню ----------*/
+.main-sidebar {
+  padding-top: 0;
+  background: #060c1a;
+}
+
+.sidebar-menu {
+  overflow: visible;
+}
+
+.sidebar-menu > li.header {
+  height: 50px;
+  padding: 0 10px;
+  font: 600 20px/50px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #fff;
+  background: #1d4205;
+}
+
+.sidebar-menu > li > a {
+  border-radius: 4px;
+  color: #fff;
+  background: #060c1a;
+  transition: all 0.3s;
+}
+
+.sidebar-menu > li > a:hover {
+  transform: translate(3px, -2px);
+  background: #1d4205;
+}
+
+.sidebar-menu > .active > a {
+  background-color: #191f2f;
+}
+
+.menu-open > a {
+  transform: translate(3px, -1px);
+  box-shadow: 0 0 1px 1px #1d4205;
+}
+
+/*подменю*/
+.treeview-menu {
+  background: #191f2f;
+  margin: 0 0 0 6px;
+  padding-left: 0;
+}
+
+.treeview-menu > li > a {
+  color: #fff;
+  transition: all 0.2s;
+}
+
+.treeview-menu > li > a:focus {
+  color: #fff;
+}
+
+.treeview-menu > li > a:hover,
+.treeview-menu > .active > a {
+  color: #fff;
+  background: #1d4205;
+}
+
+/*свернутое меню*/
+.sidebar-collapse .menu-open > a {
+  transform: none;
+  box-shadow: none;
+}
+
+.sidebar-collapse li > a {
+  transition: none;
+}
+
+.sidebar-collapse .treeview:hover > a {
+  transform: none;
+  margin-left: 3px;
+  border-radius: 4px 0 0 4px;
+  background: #1d4205;
+}
+
+/*логотип*/
+.icms-logo {
+  display: block;
+  margin: 20px auto 0;
+  padding: 0 10px;
+  max-width: 150px;
+  width: 100%;
+}
+/*---------- меню ----------*/
+
+/*---------- подвал ----------*/
+.main-footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0 10px;
+  border-color: #060c1a;
+  color: #fff;
+  background: #060c1a;
+}
+
+.footer-info {
+  flex-basis: 33.3%;
+}
+
+.cust-button {
+  display: inline-block;
+  padding: 8px 5px;
+  border-radius: 4px 4px 0 0;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.cust-button:focus {
+  text-decoration: none;
+  color: #fff;
+}
+
+.cust-button:hover {
+  color: #fff;
+  background: #1d4205;
+  transform: translateY(-3px);
+}
+
+.intrlogo {
+  display: inline-block;
+  margin: 5px 0;
+  padding: 5px 20px 6px 30px;
+  font: 10pt Arial;
+  background: url("../img/white.png") no-repeat;
+  color: #060c1a;
+  text-decoration: none;
+}
+
+.intrlogo:focus,
+.intrlogo:hover {
+  color: #060c1a;
+  text-decoration: underline;
+}
+/*---------- подвал ----------*/
+
+/*---------- блок статистики ----------*/
+.control-sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 9;
+  overflow: auto;
+  max-width: calc(100% - 230px);
+  width: 100%;
+  height: calc(100% - 31px);
+  padding: 70px 20px 20px;
+  background: #e6f9fb;
+}
+
+.sidebar-collapse .control-sidebar {
+  max-width: calc(100% - 50px);
+}
+/*---------- блок статистики ----------*/
+
+/*---------- страница авторизации ----------*/
+.login-body {
+  background: rgba(5, 24, 0, 0.9) url("../img/emblema_fk_krasnodar.png") no-repeat  center;
+  background-size: auto 25%;
+}
+
+.login-logo a {
+  font: 300 32px/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #f9f9f9;
+}
+
+.login-box-body {
+  background: transparent;
+}
+
+.login-box-body .form-control {
+  border-color: #1d4205;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.login-box-body .form-control:focus {
+  box-shadow: 0 0 5px rgba(9, 104, 17, 0.6);
+}
+
+.login-box-body .form-control-feedback {
+  color: #1d4205;
+}
+
+.btn-krasnodar {
+  display: inline-block;
+  background-color: #2d6508;
+  border: #1d4205 2px solid;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 20px 10px 20px;
+  transition: all 0.3s;
+  text-decoration: none;
+  border-radius: 20px;
+  line-height: 1;
+  position: relative;
+  font-size: 14px;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+
+
+.btn-krasnodar:hover,
+.btn-krasnodar:focus:hover {
+  color: #1d4205;
+  text-decoration: none;
+  background: #fff;
+}
+
+.btn-krasnodar:hover:before {
+  width: 10px;
+  height: 10px;
+  left: 12px;
+  margin-top: -5px;
+  background: #fff;
+  z-index: 2;
+}
+
+.btn-krasnodar:hover:after {
+  width: 24px;
+  height: 24px;
+  left: 5px;
+  margin-top: -12px;
+  background: #1d4205;
+  z-index: 1;
+}
+.btn-krasnodar:focus {
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+}
+/*---------- страница авторизации ----------*/
+
+/*---------- табы ----------*/
+.tabs-block {
+  margin-bottom: 20px;
+}
+
+.tabs-list {
+  margin: 0;
+  padding: 0 6px;
+  list-style: none;
+}
+
+.tabs-list li {
+  float: left;
+  margin-top: 2px;
+  margin-right: 2px;
+}
+
+.tabs-list .active {
+  margin-top: 0;
+}
+
+.tabs-list a {
+  display: block;
+  padding: 8px 10px 8px;
+  border-bottom: 0px;
+  border-radius: 4px 4px 0 0;
+  color: #fff;
+  text-decoration: none;
+  background: #060c1a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: color 0.3s, background 0.3s;
+}
+
+.tabs-list li:not(.active) a:hover {
+  color: #fff;
+  background: #1d4205;
+}
+
+.tabs-list .active a {
+  margin-top: 0;
+  border-bottom: 2px solid #1d4205;
+  color: #fff;
+  background: #1d4205;
+}
+
+.tab-content {
+  padding: 10px;
+  border: 2px solid #1d4205;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  background: #fff;
+}
+/*---------- табы ----------*/
+
+/*---------- таблицы и формы ----------*/
+.box {
+  border-top-color: #1d4205;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+th a {
+  color: #00829e;
+}
+
+.kv-editable-link {
+  border-bottom-color: #1d4205;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: rgba(0, 194, 212, 0.1);
+}
+
+[name="search"] {
+  padding-left: 5px;
+  border: 1px solid #1d4205;
+  border-radius: 2px;
+  box-shadow: inset 0 0 5px rgba(0, 194, 212, 0.6);
+  outline: none;
+}
+
+.box-title {
+  font-weight: 600;
+}
+
+.form-btn-block {
+  padding: 0px 10px 10px;
+}
+
+.form-btn-block button + button {
+  margin-left: 5px;
+}
+/*---------- таблицы и формы ----------*/
+
+/*---------- хлебные крошки ----------*/
+.breadcrumb {
+  padding: 5px 10px;
+  background-color: transparent;
+}
+
+.breadcrumb a {
+  font-size: 15px;
+  color: #060c1a;
+  text-decoration: underline;
+}
+
+.breadcrumb a:focus,
+.breadcrumb a:hover {
+  text-decoration: none;
+  color: #060c1a;
+}
+
+.breadcrumb > li + li:before {
+  color: #060c1a;
+}
+/*---------- хлебные крошки ----------*/
+
+/*---------- модалка ----------*/
+.modal-content {
+  background: #e6f9fb url("../img/iCMS-light.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.modal-close {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+
+.modal-close a {
+  display: block;
+  color: #060c1a;
+}
+
+.modal-close a:focus,
+.modal-close a:hover {
+  color: #1d4205;
+}
+
+.modal-header {
+  position: relative;
+  border-bottom: none;
+  padding-bottom: 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.modal-content .modal-footer {
+  border-top: none;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.modal-body {
+  padding-bottom: 0;
+}
+
+.modal-content .input-group {
+  width: 100%;
+}
+
+.modal-content .form-control {
+  border-color: #1d4205;
+}
+/*---------- модалка ----------*/
+
+/*---------- чекбоксы ----------*/
+.cust-checkbox [type="checkbox"],
+.cust-checkbox [type="radio"] {
+  display: none;
+}
+
+.cust-checkbox label {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cust-checkbox label:hover {
+  color: #1d4205;
+}
+
+.cust-checkbox__box {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  border: 2px solid #1d4205;
+  border-radius: 10px;
+  background: #fff;
+  transition: all 0.3s;
+  vertical-align: top;
+}
+
+.cust-checkbox__box:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #1d4205;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.cust-checkbox [type="checkbox"]:checked + .cust-checkbox__box,
+.cust-checkbox [type="radio"]:checked + .cust-checkbox__box {
+  background: #1d4205;
+}
+
+.cust-checkbox [type="checkbox"]:checked + .cust-checkbox__box:before,
+.cust-checkbox [type="radio"]:checked + .cust-checkbox__box:before {
+  left: calc(100% - 14px);
+  border-color: #fff;
+}
+
+.pull-right-check {
+  padding: 15px 42px 0 0;
+}
+/*---------- чекбоксы ----------*/
+
+.delete-file {
+  margin-left: 3%;
+  color: crimson;
+}
+
+.delete-file:hover {
+  color: darkred;
+}
+
+.img-view {
+  margin-bottom: 10px;
+}
+
+.new-charact {
+  background: #e5f9fb;
+  border-radius: 15%;
+}
+
+.delete-charact {
+  color: #fff;
+  background-color: #d9534f;
+  border-radius: 15%;
+}
+
+.btns-good {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.charact-select {
+  width: 170px;
+}
+
+.readonly-input {
+  background-color: rgb(235, 235, 235);
+}
+
+.new-charact {
+  margin-top: 35px;
+  margin-left: 150px;
+}
+
+.characts-good-block {
+  padding: 10px;
+  margin-left: 30px;
+  border: 1px solid #c1c1c1;
+  border-radius: 3px;
+  background: aliceblue;
+}
+
+.filter-category-block {
+  padding: 10px;
+  margin-left: 30px;
+  border: 1px solid #c1c1c1;
+  border-radius: 3px;
+  background: aliceblue;
+}
+
+.checkbox-filter-category {
+  margin-top: 30px;
+}
+
+.good-btns {
+  margin-top: 10px;
+}
+
+.good-btns .btn {
+  margin-left: 5px;
+}
+
+.tree-category {
+  padding: 15px 10px 15px 10px;
+  border: 1px solid #c1c1c1;
+  border-radius: 3px;
+  background: aliceblue;
+}
+
+.group-select-block {
+  margin-top: 20px;
+}
+
+.group-select-block .btn {
+  margin-top: 24px;
+}
+
+.group-good-block {
+  padding: 10px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #c1c1c1;
+  border-radius: 3px;
+  background: aliceblue;
+}
+
+.group-good-item {
+  padding-top: 5px;
+  border: 1px solid #c1c1c1;
+  border-radius: 3px;
+  background: #ffffff;
+}
+
+.moved-category-btn-blok {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.units-select-blok {
+  margin-top: 5px;
+}
+
+.table-avability {
+  border: 1px solid #b9b9b9b7;
+  border-radius: 2px;
+}
+
+.delete-charact-btn {
+  margin-top: 25px;
+}
