@@ -18,7 +18,6 @@ $this->params['breadcrumbs'][] = Yii::t('app', 'Редактирование');
 
     <?= $this->render('_form', [
         'model' => $model,
-        'seo' => $seo
     ]) ?>
 
 </div>

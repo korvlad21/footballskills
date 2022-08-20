@@ -1,15 +1,15 @@
 <?php
 
-use common\models\Category;
+use app\models\Category;
 use kartik\select2\Select2;
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
 /* @var $this yii\web\View */
-/* @var $searchModel common\models\search\GoodSearch */
+/* @var $searchModel app\models\search\CategorySearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Категории');
+$this->title = Yii::t('app', 'Категории характеристик');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
