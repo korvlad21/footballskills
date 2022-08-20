@@ -22120,3 +22120,2196 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1661016928.5007
     'REQUEST_TIME' => 1661016928
 ]
+2022-08-20 20:49:12 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 20:49:12 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    'PHPSESSID' => 'su2k1l7ptupqupn2g25u08l7qvb3c309'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P00XeudWyl0EqDV4IIy8uPPWngthgP8A\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://kursach.ru/index.php'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/player/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; PHPSESSID=su2k1l7ptupqupn2g25u08l7qvb3c309; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P00XeudWyl0EqDV4IIy8uPPWngthgP8A%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '53766'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661017752.6409
+    'REQUEST_TIME' => 1661017752
+]
+2022-08-20 20:57:33 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 20:57:33 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    'PHPSESSID' => 'su2k1l7ptupqupn2g25u08l7qvb3c309'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P00XeudWyl0EqDV4IIy8uPPWngthgP8A\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://kursach.ru/index.php'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/player/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; PHPSESSID=su2k1l7ptupqupn2g25u08l7qvb3c309; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P00XeudWyl0EqDV4IIy8uPPWngthgP8A%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '58894'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661018253.2969
+    'REQUEST_TIME' => 1661018253
+]
+2022-08-20 20:57:37 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\update.php:9
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:93
+2022-08-20 20:57:37 [127.0.0.1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    'PHPSESSID' => 'su2k1l7ptupqupn2g25u08l7qvb3c309'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P00XeudWyl0EqDV4IIy8uPPWngthgP8A\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://kursach.ru/index.php'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/characteristic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; PHPSESSID=su2k1l7ptupqupn2g25u08l7qvb3c309; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P00XeudWyl0EqDV4IIy8uPPWngthgP8A%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '58894'
+    'REDIRECT_URL' => '/characteristic/update'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/characteristic/update?id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661018257.0347
+    'REQUEST_TIME' => 1661018257
+]
+2022-08-20 20:58:31 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/favicons/site.manifest". in C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/favicons/si...', Array)
+#1 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\footballskills\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\footballskills\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2022-08-20 20:58:30 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://kursach.ru/characteristic/update?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '58924'
+    'REDIRECT_URL' => '/img/favicons/site.manifest'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/favicons/site.manifest'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661018310.4111
+    'REQUEST_TIME' => 1661018310
+]
+2022-08-20 20:59:56 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\update.php:9
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:93
+2022-08-20 20:59:56 [127.0.0.1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    'PHPSESSID' => 'su2k1l7ptupqupn2g25u08l7qvb3c309'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P00XeudWyl0EqDV4IIy8uPPWngthgP8A\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://kursach.ru/index.php'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/characteristic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; PHPSESSID=su2k1l7ptupqupn2g25u08l7qvb3c309; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P00XeudWyl0EqDV4IIy8uPPWngthgP8A%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '58999'
+    'REDIRECT_URL' => '/characteristic/update'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/characteristic/update?id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661018396.2633
+    'REQUEST_TIME' => 1661018396
+]
+2022-08-20 21:00:01 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 21:00:01 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    'PHPSESSID' => 'su2k1l7ptupqupn2g25u08l7qvb3c309'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P00XeudWyl0EqDV4IIy8uPPWngthgP8A\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://kursach.ru/index.php'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/characteristic/update?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; PHPSESSID=su2k1l7ptupqupn2g25u08l7qvb3c309; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P00XeudWyl0EqDV4IIy8uPPWngthgP8A%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '59003'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661018401.1959
+    'REQUEST_TIME' => 1661018401
+]
+2022-08-20 21:00:12 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 21:00:12 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    'PHPSESSID' => 'su2k1l7ptupqupn2g25u08l7qvb3c309'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P00XeudWyl0EqDV4IIy8uPPWngthgP8A\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://kursach.ru/index.php'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/player/update?id=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; PHPSESSID=su2k1l7ptupqupn2g25u08l7qvb3c309; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P00XeudWyl0EqDV4IIy8uPPWngthgP8A%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '59028'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661018412.1708
+    'REQUEST_TIME' => 1661018412
+]
+2022-08-20 21:08:44 [127.0.0.1][1][su2k1l7ptupqupn2g25u08l7qvb3c309][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 21:08:44 [127.0.0.1][1][su2k1l7ptupqupn2g25u08l7qvb3c309][error][yii\base\InvalidArgumentException] yii\base\UnknownMethodException: Calling unknown method: app\models\Characteristic::getcharacteristic() in C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Component.php:300
+Stack trace:
+#0 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\db\BaseActiveRecord.php(1237): yii\base\Component->__call('getcharacterist...', Array)
+#1 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\db\ActiveQueryTrait.php(177): yii\db\BaseActiveRecord->getRelation('characteristic')
+#2 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\db\ActiveQueryTrait.php(144): yii\db\ActiveQuery->normalizeRelations(Object(app\models\Characteristic), Array)
+#3 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\db\ActiveQuery.php(224): yii\db\ActiveQuery->findWith(Array, '[<span class="t...')
+#4 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\db\Query.php(251): yii\db\ActiveQuery->populate(Array)
+#5 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all(NULL)
+#6 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\data\ActiveDataProvider.php(115): yii\db\ActiveQuery->all(NULL)
+#7 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\data\BaseDataProvider.php(101): yii\data\ActiveDataProvider->prepareModels()
+#8 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\data\BaseDataProvider.php(114): yii\data\BaseDataProvider->prepare()
+#9 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\data\BaseDataProvider.php(155): yii\data\BaseDataProvider->getModels()
+#10 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\widgets\BaseListView.php(190): yii\data\BaseDataProvider->getCount()
+#11 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\widgets\BaseListView.php(158): yii\widgets\BaseListView->renderSummary()
+#12 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{summary}')
+#13 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{summary}')
+#14 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#15 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#16 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#17 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#18 C:\OpenServer\domains\footballskills\views\characteristic\index.php(31): yii\base\Widget::widget(Array)
+#19 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\View.php(347): require('C:\\OpenServer\\d...')
+#20 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', '[<span class="s...')
+#21 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(app\controllers\CharacteristicController))
+#22 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\CharacteristicController))
+#23 C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php(39): yii\base\Controller->render('index', Array)
+#24 [internal function]: app\controllers\CharacteristicController->actionIndex()
+#25 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#26 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#27 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#28 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('characteristic', Array)
+#29 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#30 C:\OpenServer\domains\footballskills\web\index.php(12): yii\base\Application->run()
+#31 {main}
+
+Next yii\base\InvalidArgumentException: app\models\Characteristic has no relation named "characteristic". in C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\db\BaseActiveRecord.php:1240
+Stack trace:
+#0 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\db\ActiveQueryTrait.php(177): yii\db\BaseActiveRecord->getRelation('characteristic')
+#1 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\db\ActiveQueryTrait.php(144): yii\db\ActiveQuery->normalizeRelations(Object(app\models\Characteristic), Array)
+#2 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\db\ActiveQuery.php(224): yii\db\ActiveQuery->findWith(Array, '[<span class="t...')
+#3 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\db\Query.php(251): yii\db\ActiveQuery->populate(Array)
+#4 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\data\ActiveDataProvider.php(115): yii\db\ActiveQuery->all(NULL)
+#6 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\data\BaseDataProvider.php(101): yii\data\ActiveDataProvider->prepareModels()
+#7 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\data\BaseDataProvider.php(114): yii\data\BaseDataProvider->prepare()
+#8 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\data\BaseDataProvider.php(155): yii\data\BaseDataProvider->getModels()
+#9 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\widgets\BaseListView.php(190): yii\data\BaseDataProvider->getCount()
+#10 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\widgets\BaseListView.php(158): yii\widgets\BaseListView->renderSummary()
+#11 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{summary}')
+#12 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{summary}')
+#13 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#14 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#15 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#16 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#17 C:\OpenServer\domains\footballskills\views\characteristic\index.php(31): yii\base\Widget::widget(Array)
+#18 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\View.php(347): require('C:\\OpenServer\\d...')
+#19 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', '[<span class="s...')
+#20 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(app\controllers\CharacteristicController))
+#21 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\CharacteristicController))
+#22 C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php(39): yii\base\Controller->render('index', Array)
+#23 [internal function]: app\controllers\CharacteristicController->actionIndex()
+#24 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#25 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#26 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#27 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('characteristic', Array)
+#28 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 C:\OpenServer\domains\footballskills\web\index.php(12): yii\base\Application->run()
+#30 {main}
+2022-08-20 21:08:42 [127.0.0.1][1][su2k1l7ptupqupn2g25u08l7qvb3c309][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    'PHPSESSID' => 'su2k1l7ptupqupn2g25u08l7qvb3c309'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P00XeudWyl0EqDV4IIy8uPPWngthgP8A\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://kursach.ru/index.php'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/player/update?id=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; PHPSESSID=su2k1l7ptupqupn2g25u08l7qvb3c309; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P00XeudWyl0EqDV4IIy8uPPWngthgP8A%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '58910'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661018922.086
+    'REQUEST_TIME' => 1661018922
+]
+2022-08-20 21:09:01 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 21:09:01 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    'PHPSESSID' => 'su2k1l7ptupqupn2g25u08l7qvb3c309'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P00XeudWyl0EqDV4IIy8uPPWngthgP8A\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://kursach.ru/index.php'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/player/update?id=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; PHPSESSID=su2k1l7ptupqupn2g25u08l7qvb3c309; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P00XeudWyl0EqDV4IIy8uPPWngthgP8A%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '58928'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661018941.5126
+    'REQUEST_TIME' => 1661018941
+]
+2022-08-20 21:09:32 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 21:09:31 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    'PHPSESSID' => 'su2k1l7ptupqupn2g25u08l7qvb3c309'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P00XeudWyl0EqDV4IIy8uPPWngthgP8A\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://kursach.ru/index.php'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; PHPSESSID=su2k1l7ptupqupn2g25u08l7qvb3c309; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P00XeudWyl0EqDV4IIy8uPPWngthgP8A%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '58950'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661018970.9434
+    'REQUEST_TIME' => 1661018970
+]
+2022-08-20 21:09:37 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\update.php:9
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:93
+2022-08-20 21:09:37 [127.0.0.1][1][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    'PHPSESSID' => 'su2k1l7ptupqupn2g25u08l7qvb3c309'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P00XeudWyl0EqDV4IIy8uPPWngthgP8A\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://kursach.ru/index.php'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/characteristic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; PHPSESSID=su2k1l7ptupqupn2g25u08l7qvb3c309; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P00XeudWyl0EqDV4IIy8uPPWngthgP8A%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '58955'
+    'REDIRECT_URL' => '/characteristic/update'
+    'REDIRECT_QUERY_STRING' => 'id=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'REQUEST_URI' => '/characteristic/update?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661018977.2128
+    'REQUEST_TIME' => 1661018977
+]
+2022-08-20 21:09:53 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 21:09:52 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    'PHPSESSID' => 'su2k1l7ptupqupn2g25u08l7qvb3c309'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P00XeudWyl0EqDV4IIy8uPPWngthgP8A\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://kursach.ru/index.php'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/characteristic/update?id=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; PHPSESSID=su2k1l7ptupqupn2g25u08l7qvb3c309; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P00XeudWyl0EqDV4IIy8uPPWngthgP8A%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '58973'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661018992.8527
+    'REQUEST_TIME' => 1661018992
+]
+2022-08-20 21:09:59 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 21:09:58 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    'PHPSESSID' => 'su2k1l7ptupqupn2g25u08l7qvb3c309'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P00XeudWyl0EqDV4IIy8uPPWngthgP8A\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://kursach.ru/index.php'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/characteristic/update?id=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; PHPSESSID=su2k1l7ptupqupn2g25u08l7qvb3c309; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P00XeudWyl0EqDV4IIy8uPPWngthgP8A%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '58980'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661018998.6072
+    'REQUEST_TIME' => 1661018998
+]
+2022-08-20 21:10:55 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/favicons/site.manifest". in C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/favicons/si...', Array)
+#1 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\footballskills\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\footballskills\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2022-08-20 21:10:55 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://kursach.ru/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '59016'
+    'REDIRECT_URL' => '/img/favicons/site.manifest'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/favicons/site.manifest'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661019055.1838
+    'REQUEST_TIME' => 1661019055
+]
+2022-08-20 21:15:19 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 21:15:19 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    'PHPSESSID' => 'su2k1l7ptupqupn2g25u08l7qvb3c309'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P00XeudWyl0EqDV4IIy8uPPWngthgP8A\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://kursach.ru/index.php'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; PHPSESSID=su2k1l7ptupqupn2g25u08l7qvb3c309; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P00XeudWyl0EqDV4IIy8uPPWngthgP8A%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '58731'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661019319.4903
+    'REQUEST_TIME' => 1661019319
+]
+2022-08-20 21:15:39 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 21:15:38 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    'PHPSESSID' => 'su2k1l7ptupqupn2g25u08l7qvb3c309'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P00XeudWyl0EqDV4IIy8uPPWngthgP8A\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://kursach.ru/index.php'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; PHPSESSID=su2k1l7ptupqupn2g25u08l7qvb3c309; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P00XeudWyl0EqDV4IIy8uPPWngthgP8A%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '58752'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661019338.6086
+    'REQUEST_TIME' => 1661019338
+]
+2022-08-20 21:17:58 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 21:17:57 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    'PHPSESSID' => 'su2k1l7ptupqupn2g25u08l7qvb3c309'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P00XeudWyl0EqDV4IIy8uPPWngthgP8A\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://kursach.ru/index.php'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; PHPSESSID=su2k1l7ptupqupn2g25u08l7qvb3c309; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P00XeudWyl0EqDV4IIy8uPPWngthgP8A%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '58893'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661019477.2653
+    'REQUEST_TIME' => 1661019477
+]
+2022-08-20 21:19:51 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 21:19:50 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    'PHPSESSID' => 'su2k1l7ptupqupn2g25u08l7qvb3c309'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P00XeudWyl0EqDV4IIy8uPPWngthgP8A\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://kursach.ru/index.php'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; PHPSESSID=su2k1l7ptupqupn2g25u08l7qvb3c309; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P00XeudWyl0EqDV4IIy8uPPWngthgP8A%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '59017'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661019589.9734
+    'REQUEST_TIME' => 1661019589
+]
+2022-08-20 21:20:09 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 21:20:09 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    'PHPSESSID' => 'su2k1l7ptupqupn2g25u08l7qvb3c309'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P00XeudWyl0EqDV4IIy8uPPWngthgP8A\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://kursach.ru/index.php'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; PHPSESSID=su2k1l7ptupqupn2g25u08l7qvb3c309; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P00XeudWyl0EqDV4IIy8uPPWngthgP8A%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '59049'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661019608.9835
+    'REQUEST_TIME' => 1661019608
+]
+2022-08-20 21:20:50 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 21:20:48 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    'PHPSESSID' => 'su2k1l7ptupqupn2g25u08l7qvb3c309'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P00XeudWyl0EqDV4IIy8uPPWngthgP8A\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://kursach.ru/index.php'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; PHPSESSID=su2k1l7ptupqupn2g25u08l7qvb3c309; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P00XeudWyl0EqDV4IIy8uPPWngthgP8A%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '59097'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661019648.7035
+    'REQUEST_TIME' => 1661019648
+]
+2022-08-20 21:21:08 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 21:21:07 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    'PHPSESSID' => 'su2k1l7ptupqupn2g25u08l7qvb3c309'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P00XeudWyl0EqDV4IIy8uPPWngthgP8A\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://kursach.ru/index.php'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; PHPSESSID=su2k1l7ptupqupn2g25u08l7qvb3c309; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P00XeudWyl0EqDV4IIy8uPPWngthgP8A%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '59134'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661019667.6988
+    'REQUEST_TIME' => 1661019667
+]
+2022-08-20 21:21:52 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 21:21:52 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    'PHPSESSID' => 'su2k1l7ptupqupn2g25u08l7qvb3c309'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P00XeudWyl0EqDV4IIy8uPPWngthgP8A\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://kursach.ru/index.php'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; PHPSESSID=su2k1l7ptupqupn2g25u08l7qvb3c309; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P00XeudWyl0EqDV4IIy8uPPWngthgP8A%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '59244'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661019712.0318
+    'REQUEST_TIME' => 1661019712
+]
+2022-08-20 21:21:54 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 21:21:53 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    'PHPSESSID' => 'su2k1l7ptupqupn2g25u08l7qvb3c309'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P00XeudWyl0EqDV4IIy8uPPWngthgP8A\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://kursach.ru/index.php'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; PHPSESSID=su2k1l7ptupqupn2g25u08l7qvb3c309; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P00XeudWyl0EqDV4IIy8uPPWngthgP8A%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '59248'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661019713.5633
+    'REQUEST_TIME' => 1661019713
+]
+2022-08-20 21:22:10 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 21:22:09 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    'PHPSESSID' => 'su2k1l7ptupqupn2g25u08l7qvb3c309'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P00XeudWyl0EqDV4IIy8uPPWngthgP8A\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://kursach.ru/index.php'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; PHPSESSID=su2k1l7ptupqupn2g25u08l7qvb3c309; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=3c496b528ffddfd16e5f9ae6a4e87b2878900195ef3a97bab38a9a30d91205e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P00XeudWyl0EqDV4IIy8uPPWngthgP8A%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '59270'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661019729.9112
+    'REQUEST_TIME' => 1661019729
+]
+2022-08-20 21:23:12 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 21:23:12 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    'PHPSESSID' => '0953gjk1rltgsefqtcspa2ps28r003p9'
+    '_csrf' => '89f62fad7da2d44dde91046d8226e8ff9ae19730955b5b6e5feb6d567d1ff91aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nNQvGAupuj8cRgZwJkOA06GKyxhx8ZVX\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=0953gjk1rltgsefqtcspa2ps28r003p9; _csrf=89f62fad7da2d44dde91046d8226e8ff9ae19730955b5b6e5feb6d567d1ff91aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nNQvGAupuj8cRgZwJkOA06GKyxhx8ZVX%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '59399'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661019792.6978
+    'REQUEST_TIME' => 1661019792
+]
+2022-08-20 21:23:39 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 21:23:39 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    'PHPSESSID' => '0953gjk1rltgsefqtcspa2ps28r003p9'
+    '_csrf' => '89f62fad7da2d44dde91046d8226e8ff9ae19730955b5b6e5feb6d567d1ff91aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nNQvGAupuj8cRgZwJkOA06GKyxhx8ZVX\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=0953gjk1rltgsefqtcspa2ps28r003p9; _csrf=89f62fad7da2d44dde91046d8226e8ff9ae19730955b5b6e5feb6d567d1ff91aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nNQvGAupuj8cRgZwJkOA06GKyxhx8ZVX%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '59424'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661019819.4911
+    'REQUEST_TIME' => 1661019819
+]
+2022-08-20 21:24:04 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 21:24:04 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    'PHPSESSID' => '0953gjk1rltgsefqtcspa2ps28r003p9'
+    '_csrf' => '89f62fad7da2d44dde91046d8226e8ff9ae19730955b5b6e5feb6d567d1ff91aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nNQvGAupuj8cRgZwJkOA06GKyxhx8ZVX\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/player/update?id=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=0953gjk1rltgsefqtcspa2ps28r003p9; _csrf=89f62fad7da2d44dde91046d8226e8ff9ae19730955b5b6e5feb6d567d1ff91aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nNQvGAupuj8cRgZwJkOA06GKyxhx8ZVX%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '59566'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661019844.2907
+    'REQUEST_TIME' => 1661019844
+]
+2022-08-20 21:24:14 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/favicons/site.manifest". in C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/favicons/si...', Array)
+#1 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\footballskills\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\footballskills\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2022-08-20 21:24:14 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://kursach.ru/characteristic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '59611'
+    'REDIRECT_URL' => '/img/favicons/site.manifest'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/favicons/site.manifest'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661019854.3354
+    'REQUEST_TIME' => 1661019854
+]
+2022-08-20 21:25:47 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 21:25:45 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    'PHPSESSID' => '0953gjk1rltgsefqtcspa2ps28r003p9'
+    '_csrf' => '89f62fad7da2d44dde91046d8226e8ff9ae19730955b5b6e5feb6d567d1ff91aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nNQvGAupuj8cRgZwJkOA06GKyxhx8ZVX\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/player/update?id=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=0953gjk1rltgsefqtcspa2ps28r003p9; _csrf=89f62fad7da2d44dde91046d8226e8ff9ae19730955b5b6e5feb6d567d1ff91aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nNQvGAupuj8cRgZwJkOA06GKyxhx8ZVX%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '55698'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661019945.4248
+    'REQUEST_TIME' => 1661019945
+]
+2022-08-20 21:25:58 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\index.php:12
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-20 21:25:58 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    'PHPSESSID' => '0953gjk1rltgsefqtcspa2ps28r003p9'
+    '_csrf' => '89f62fad7da2d44dde91046d8226e8ff9ae19730955b5b6e5feb6d567d1ff91aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nNQvGAupuj8cRgZwJkOA06GKyxhx8ZVX\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/characteristic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=0953gjk1rltgsefqtcspa2ps28r003p9; _csrf=89f62fad7da2d44dde91046d8226e8ff9ae19730955b5b6e5feb6d567d1ff91aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nNQvGAupuj8cRgZwJkOA06GKyxhx8ZVX%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '55725'
+    'REDIRECT_URL' => '/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristic'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661019958.4253
+    'REQUEST_TIME' => 1661019958
+]
+2022-08-20 21:26:09 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\update.php:9
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:93
+2022-08-20 21:26:09 [127.0.0.1][1][-][info][application] $_GET = [
+    'id' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    'PHPSESSID' => '0953gjk1rltgsefqtcspa2ps28r003p9'
+    '_csrf' => '89f62fad7da2d44dde91046d8226e8ff9ae19730955b5b6e5feb6d567d1ff91aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nNQvGAupuj8cRgZwJkOA06GKyxhx8ZVX\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/characteristic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=0953gjk1rltgsefqtcspa2ps28r003p9; _csrf=89f62fad7da2d44dde91046d8226e8ff9ae19730955b5b6e5feb6d567d1ff91aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nNQvGAupuj8cRgZwJkOA06GKyxhx8ZVX%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '55742'
+    'REDIRECT_URL' => '/characteristic/update'
+    'REDIRECT_QUERY_STRING' => 'id=4'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=4'
+    'REQUEST_URI' => '/characteristic/update?id=4'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661019969.7962
+    'REQUEST_TIME' => 1661019969
+]
+2022-08-20 21:26:38 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/favicons/site.manifest". in C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/favicons/si...', Array)
+#1 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\footballskills\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\footballskills\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2022-08-20 21:26:38 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://kursach.ru/characteristic/update?id=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '52599'
+    'REDIRECT_URL' => '/img/favicons/site.manifest'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/favicons/site.manifest'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661019998.2544
+    'REQUEST_TIME' => 1661019998
+]
+2022-08-20 21:27:33 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\OpenServer\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: C:\OpenServer\domains\footballskills/messages/ru/app.php
+    in C:\OpenServer\domains\footballskills\views\characteristic\update.php:9
+    in C:\OpenServer\domains\footballskills\controllers\CharacteristicController.php:93
+2022-08-20 21:27:32 [127.0.0.1][1][-][info][application] $_GET = [
+    'id' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    'PHPSESSID' => '0953gjk1rltgsefqtcspa2ps28r003p9'
+    '_csrf' => '89f62fad7da2d44dde91046d8226e8ff9ae19730955b5b6e5feb6d567d1ff91aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nNQvGAupuj8cRgZwJkOA06GKyxhx8ZVX\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://kursach.ru/characteristic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=0953gjk1rltgsefqtcspa2ps28r003p9; _csrf=89f62fad7da2d44dde91046d8226e8ff9ae19730955b5b6e5feb6d567d1ff91aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nNQvGAupuj8cRgZwJkOA06GKyxhx8ZVX%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '52647'
+    'REDIRECT_URL' => '/characteristic/update'
+    'REDIRECT_QUERY_STRING' => 'id=4'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=4'
+    'REQUEST_URI' => '/characteristic/update?id=4'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661020052.2156
+    'REQUEST_TIME' => 1661020052
+]

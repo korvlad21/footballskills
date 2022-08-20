@@ -449,7 +449,7 @@ th a {
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: rgba(0, 194, 212, 0.1);
+  background-color: rgba(18, 192, 12, 0.1);
 }
 
 [name="search"] {
@@ -679,7 +679,8 @@ th a {
   padding: 15px 10px 15px 10px;
   border: 1px solid #c1c1c1;
   border-radius: 3px;
-  background: aliceblue;
+  background: #f5fff0;
+  width: 500px;
 }
 
 .group-select-block {
