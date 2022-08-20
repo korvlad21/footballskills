@@ -61,11 +61,11 @@ $user = Yii::$app->user->identity;
             <li class="dropdown user user-menu">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <i class="fa fa-user"></i>
-                <span class="fa_caption"><?= Yii::$app->user->identity->name?></span>
+                <span class="fa_caption"><?= Yii::$app->user->identity->username?></span>
               </a>
               <ul class="dropdown-menu">
                 <li class="user-neme"><?= Yii::$app->user->identity->username?></li>
-               <?php  if($user->status_icms == 1):?> <li><a href="<?=Url::to(['/users/index'])?>"><i class="fa fa-gears"></i>Управление пользователями</a></li><?php endif;?>
+
                 <li><a href="<?= Url::to(['/site/new-pass'])?>" data-pass="true"><i class="fa fa-key"></i>Смена пароля</a></li>
                 <li><?= Html::beginForm(['/site/logout'], 'post') . Html::submitButton('<i class="fa fa-sign-out"></i>Выйти', ['class' => '']) . Html::endForm() ;?></li>
               </ul>

@@ -17,7 +17,7 @@ $user = Yii::$app->user->identity;
                 [
                     'options' => ['class' => 'sidebar-menu tree', 'data-widget' => 'tree'],
                     'items' => [
-                        ['label' => 'Заказы', 'icon' => 'shopping-basket', 'url' => ['/order']],
+                        ['label' => 'Футболисты', 'icon' => 'shopping-basket', 'url' => ['/player']],
                        
                     ],
                 ]

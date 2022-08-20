@@ -1,6 +1,6 @@
 <?php
 
-use common\models\Article;
+use app\models\Player;
 use kartik\editable\Editable;
 use yii\helpers\Html;
 use kartik\grid\GridView;
@@ -24,7 +24,7 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
       </div>
       <div class="box-body">
-        <div id="articleTable">
+        <div id="playerTable">
           <?=
           GridView::widget([
             'dataProvider' => $dataProvider,
@@ -33,16 +33,11 @@ $this->params['breadcrumbs'][] = $this->title;
               'style' => 'word-wrap: break-word;'
             ],
             'columns' => [
-              [
-                'label' => 'Картинка',
-                'format' => 'raw',
-                'value' => function ($model) {
-                  return Html::img(Url::toRoute($model->getImage()->getPath('x150')), [
-                    'alt' => 'yii2 - картинка в gridview',
-                    'style' => 'width:150px;'
-                  ]);
-                },
-              ],
+              'surname',
+              'name',
+              'otchestvo',
+              'position',
+
               [
                 'attribute' => 'name',
                 'content' => function ($model) {
