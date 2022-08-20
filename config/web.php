@@ -50,13 +50,13 @@ $config = [
             ],
         ],
         'db' => $db,
-        // 'urlManager' => [
-        //     'enablePrettyUrl' => true,
-        //     'showScriptName' => false,
-        //     'rules' => [
-        //         '/login' => '/user/default/login',
-        //     ],
-        // ],
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'rules' => [
+                '/' => '/player',
+            ],
+        ],
     ],
     'params' => $params,
 ];

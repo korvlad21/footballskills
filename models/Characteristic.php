@@ -9,11 +9,11 @@ use app\models\AppModel;
 use yii\db\ActiveRecord;
 use yii\behaviors\TimestampBehavior;
 
-class Category extends AppModel
+class Characteristic extends AppModel
 {
     public static function tableName()
     {
-        return 'categories';
+        return 'characteristics';
     }
 
     public function behaviors(): array
@@ -26,9 +26,9 @@ class Category extends AppModel
                     ActiveRecord::EVENT_BEFORE_UPDATE => ['updated_at'],
                 ],
                 // если вместо метки времени UNIX используется datetime:
-                 'value' => new Expression('NOW()'),
+                'value' => new Expression('NOW()'),
             ],
-             
+
         ];
     }
 
@@ -39,6 +39,7 @@ class Category extends AppModel
             [['name'], 'string', 'max' => 200],
             [['description'], 'string'],
             [['parent_id'], 'integer'],
+            [['is_child'], 'integer'],
             [['is_delete'], 'integer'],
         ];
     }
@@ -55,36 +56,31 @@ class Category extends AppModel
 
     public function getParent()
     {
-        return $this->hasOne(Category::class, ['id' => 'parent_id']);
+        return $this->hasOne(Characteristic::class, ['id' => 'parent_id']);
     }
 
     public function getChild()
     {
-        return $this->hasMany(Category::class, ['parent_id' => 'id']);
+        return $this->hasMany(Characteristic::class, ['parent_id' => 'id']);
     }
 
 
 
-    public static function getListForSelectInCategory($this_id)
+    public static function getListForSelectInCharacteristic($model)
     {
+
         $values = [];
         $values[-1] = 'Нет';
 
         $query = self::find();
-        if (!empty($this_id)) {
-            $query->where(['!=', 'id', $this_id]);
+        if (!empty($model->id)) {
+            $query->where(['!=', 'id', $model->id]);
         }
         $cats = $query->all();
-
         foreach ($cats as $cat) {
             $id = $cat->id;
 
             $name = $cat->name;
-            $parent = $cat->parent;
-            if (!empty($parent)) {
-                $name .= " - (" . $parent->name . ")";
-            }
-
             $values[$id] = $name;
         }
 
@@ -92,22 +88,6 @@ class Category extends AppModel
     }
 
 
-    public static function getArrayTree($categories, $parentId = "0")
-    {
-        $catsArr = [];
-        foreach ($categories as $category) {
-            if ($category->is_delete == 0) {
-                $catsArr[$category->id] = [];
-                $catsArr[$category->id]['id']          = $category->id;
-                $catsArr[$category->id]['name']        = $category->name;
-                $catsArr[$category->id]['parent']      = (!empty($category->parent_id) && ($category->parent_id !== 0)) ? $category->parent_id : "0";
-            }
-        }
-
-        $treeCategories = self::buildTree($catsArr, $parentId);
-
-        return $treeCategories;
-    }
 
     public static function form_tree($mess)
     {
@@ -121,15 +101,13 @@ class Category extends AppModel
         return $tree;
     }
 
-    //$parent_id - какой parentid считать корневым
-    //по умолчанию 0 (корень)
     public static function build_tree($cats, $parent_id, $id)
     {
         if (is_array($cats) && isset($cats[$parent_id])) {
             $tree = '<ul>';
             foreach ($cats[$parent_id] as $cat) {
                 $tree .= '<li>';
-                $tree .= ($cat['id'] == $id) ? "<b>" . $cat['name'] . "</b>" : '<a href="' . Url::to(['update', 'id' => $cat['id'] ]) . '">' . $cat['name'] . '</a>';
+                $tree .= ($cat['id'] == $id) ? "<b>" . $cat['name'] . "</b>" : '<a href="' . Url::to(['update', 'id' => $cat['id']]) . '">' . $cat['name'] . '</a>';
                 $tree .= self::build_tree($cats, $cat['id'], $id);
                 $tree .= '</li>';
             }
@@ -141,15 +119,28 @@ class Category extends AppModel
     }
     public function changeChildParentId()
     {
-        $catChilds=$this->child;
-        foreach($catChilds as $catChild)
-        {
-            $catChild->parent_id=$this->parent_id;
+        $catChilds = $this->child;
+        $this->isChild($catChilds);
+        foreach ($catChilds as $catChild) {
+            $catChild->parent_id = $this->parent_id;
             $catChild->save();
         }
-        
     }
-    
+
+    public function isChild($catChilds=null)
+    {
+        if(!$catChilds)
+        {
+            $catChilds = $this->child;
+        }
+        if (empty($catChilds)) {
+            $this->is_child = 1;
+        } else {
+            $this->is_child = 0;
+        }
+        $this->save();
+    }
+
 
     public function prepareParent()
     {
@@ -161,5 +152,4 @@ class Category extends AppModel
 
         return $parent;
     }
-
 }

@@ -4,15 +4,15 @@ namespace app\controllers;
 
 use Yii;
 use yii\web\Controller;
-use app\models\Category;
+use app\models\Characteristic;
 use yii\web\UploadedFile;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use yii\web\NotFoundHttpException;
-use app\models\search\CategorySearch;
+use app\models\search\CharacteristicSearch;
 use kartik\grid\EditableColumnAction;
 
-class CategoryController extends AppController
+class CharacteristicController extends AppController
 {
     /**
      * {@inheritdoc}
@@ -31,7 +31,7 @@ class CategoryController extends AppController
 
     public function actionIndex()
     {
-        $searchModel = new CategorySearch();
+        $searchModel = new CharacteristicSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -43,12 +43,16 @@ class CategoryController extends AppController
 
     public function actionCreate()
     {
-        $model = new Category();
+        $model = new Characteristic();
 
         if ($model->load(Yii::$app->request->post())) {
 
             $model->parent_id = $model->prepareParent();
             if ($model->save()) {
+                if ($parentModel = $model->parent) {
+                    $parentModel->is_child = 0;
+                    $parentModel->save();
+                }
                 return $this->redirect(['index']);
             } else {
                 $strErrors = array_shift($model->errors)[0];
@@ -68,10 +72,15 @@ class CategoryController extends AppController
         $post = Yii::$app->request->post();
 
         if ($model->load($post)) {
-            
+
             $model->parent_id = $model->prepareParent();
+            $model->isChild();
 
             if ($model->save()) {
+                if ($parentModel = $model->parent) {
+                    $parentModel->isChild();
+                    $parentModel->save();
+                }
             } else {
                 $strErrors = array_shift($model->errors)[0];
                 Yii::$app->session->setFlash('warning', $strErrors);
@@ -87,8 +96,8 @@ class CategoryController extends AppController
 
     public function actionDelete($id)
     {
-        
-        $model=$this->findModel($id);
+
+        $model = $this->findModel($id);
         $model->changeChildParentId();
         $model->delete();
 
@@ -98,7 +107,7 @@ class CategoryController extends AppController
 
     protected function findModel($id)
     {
-        if (($model = Category::findOne($id)) !== null) {
+        if (($model = Characteristic::findOne($id)) !== null) {
             return $model;
         }
 

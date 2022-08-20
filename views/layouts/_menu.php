@@ -18,7 +18,7 @@ $user = Yii::$app->user->identity;
                     'options' => ['class' => 'sidebar-menu tree', 'data-widget' => 'tree'],
                     'items' => [
                         ['label' => 'Футболисты', 'icon' => 'user', 'url' => ['/player']],
-                        ['label' => 'Категории характеристик', 'icon' => 'inbox', 'url' => ['/category']],
+                        ['label' => 'Категории характеристик', 'icon' => 'inbox', 'url' => ['/characteristic']],
                        
                     ],
                 ]

@@ -2,15 +2,15 @@
 
 namespace app\models\search;
 
-use app\models\Category;
+use app\models\Characteristic;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 
 
 /**
- * CategorySearch represents the model behind the search form of `app\models\Category`.
+ * CharacteristicSearch represents the model behind the search form of `app\models\Characteristic`.
  */
-class CategorySearch extends Category
+class CharacteristicSearch extends Characteristic
 {
     /**
      * {@inheritdoc}
@@ -44,7 +44,7 @@ class CategorySearch extends Category
      */
     public function search($params)
     {
-        $query = Category::find();
+        $query = Characteristic::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,

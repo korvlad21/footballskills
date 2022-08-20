@@ -655,7 +655,7 @@ th a {
   background: aliceblue;
 }
 
-.filter-category-block {
+.filter-characteristic-block {
   padding: 10px;
   margin-left: 30px;
   border: 1px solid #c1c1c1;
@@ -663,7 +663,7 @@ th a {
   background: aliceblue;
 }
 
-.checkbox-filter-category {
+.checkbox-filter-characteristic {
   margin-top: 30px;
 }
 
@@ -675,7 +675,7 @@ th a {
   margin-left: 5px;
 }
 
-.tree-category {
+.tree-characteristic {
   padding: 15px 10px 15px 10px;
   border: 1px solid #c1c1c1;
   border-radius: 3px;
@@ -706,7 +706,7 @@ th a {
   background: #ffffff;
 }
 
-.moved-category-btn-blok {
+.moved-characteristic-btn-blok {
   display: flex;
   justify-content: center;
   align-items: center;
