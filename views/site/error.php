@@ -20,7 +20,7 @@ $this->title = 'Error 404';
 				<p>Запрашиваемая страница не существует</p>
 			</div>  
 			<div class="text-center">
-				<a href="/icms" class="btn-intrid">на главную</a>
+				<a href="/" class="btn-krasnodar">на главную</a>
 			</div>
 		</div>
 		<div class="col-sm-5">

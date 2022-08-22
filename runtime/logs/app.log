@@ -30118,3 +30118,75 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1661195144.1633
     'REQUEST_TIME' => 1661195144
 ]
+2022-08-22 22:20:04 [127.0.0.1][1][rdvs682jvnbq1blu2occ2m163lsi7o06][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "characteristi". in C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('characteristi', Array)
+#1 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\footballskills\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OpenServer\domains\footballskills\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\footballskills\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2022-08-22 22:20:04 [127.0.0.1][1][rdvs682jvnbq1blu2occ2m163lsi7o06][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => 'e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[370,\"KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D\",2592000]\";}'
+    '_identity-backend' => '11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS\",2592000]\";}'
+    'PHPSESSID' => 'rdvs682jvnbq1blu2occ2m163lsi7o06'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => 'c75770bef4a7c452537faec6a64054c2018f8cd81e28c6097fef4007bb3fd9b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"b8HeXcINaQlRhAb-Tg5v8sWiskxFg7m4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://kursach.ru/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'kursach.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=e21babbaa92a6e633e5ac908591aa0a1d43084910463778baa0fa3cfdbe2cddba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B370%2C%22KyJIv7cBUIn5gtGVXIaddj5ZH8Ot1o0D%22%2C2592000%5D%22%3B%7D; _identity-backend=11cf58044d14b7c4b66707e9fbe5cf9801ab309f4eeb03111da76033b36fc9cea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qKraC0ZRW1GYH7WtaJn7qEnUAvK2l-QS%22%2C2592000%5D%22%3B%7D; PHPSESSID=rdvs682jvnbq1blu2occ2m163lsi7o06; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=c75770bef4a7c452537faec6a64054c2018f8cd81e28c6097fef4007bb3fd9b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22b8HeXcINaQlRhAb-Tg5v8sWiskxFg7m4%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.3\\ext;c:\\openserver\\modules\\php\\PHP_7.3\\pear;c:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.3;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Users\\vlade\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\vlade\\AppData\\Local\\atom\\bin;C:\\Users\\vlade\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\vlade\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'kursach.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/footballskills/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '58561'
+    'REDIRECT_URL' => '/characteristi'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/characteristi'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661196004.7667
+    'REQUEST_TIME' => 1661196004
+]
