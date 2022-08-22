@@ -222,7 +222,7 @@
 }
 
 /*логотип*/
-.icms-logo {
+.krasnodar-logo {
   display: block;
   margin: 20px auto 0;
   padding: 0 10px;
@@ -497,10 +497,6 @@ th a {
 /*---------- хлебные крошки ----------*/
 
 /*---------- модалка ----------*/
-.modal-content {
-  background: #e6f9fb url("../img/iCMS-light.svg") no-repeat center center;
-  background-size: contain;
-}
 
 .modal-close {
   position: absolute;

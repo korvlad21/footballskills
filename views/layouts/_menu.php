@@ -26,5 +26,5 @@ $user = Yii::$app->user->identity;
             ?>
 
     </section>
-    <img src="/img/emblema_fk_krasnodar.png" alt="ФК Краснодар" class="icms-logo">
+    <img src="/img/emblema_fk_krasnodar.png" alt="ФК Краснодар" class="krasnodar-logo">
 </aside>
