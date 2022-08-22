@@ -22,14 +22,14 @@ $('.new-charact-btn').on('click', function () {
     } else {
         $.ajax({
             type: 'get',
-            url: '/icms/good/new-charact-item',
+            url: '/player/new-charact-item',
             data: {
                 model_id: model_id,
                 characteristic_id: characteristic_id,
             },
             success: function (data) {
 
-                var charactsBlock = document.querySelector('.good-characteristics');
+                var charactsBlock = document.querySelector('.player-characteristics');
                 charactsBlock.insertAdjacentHTML('beforeend', data);
 
                 $('.id-item-' + characteristic_id).on('click', function () {
@@ -42,7 +42,7 @@ $('.new-charact-btn').on('click', function () {
 
                         $.ajax({
                             type: 'get',
-                            url: '/icms/good/delete-charact-item',
+                            url: '/player/delete-charact-item',
                             data: {
                                 model_id: model_id,
                                 characteristic_id: characteristic_id,

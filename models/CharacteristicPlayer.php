@@ -3,32 +3,22 @@
 namespace app\models;
 
 use Yii;
-use yii\helpers\ArrayHelper;
 use yii\helpers\Url;
 use yii\db\Expression;
 use app\models\AppModel;
 use yii\db\ActiveRecord;
 use yii\behaviors\TimestampBehavior;
 
-class Characteristic extends AppModel
+class CharacteristicPlayer extends AppModel
 {
     public static function tableName()
     {
-        return 'characteristics';
+        return 'characteristic_players';
     }
 
     public function behaviors(): array
     {
         return [
-            [
-                'class' => TimestampBehavior::class,
-                'attributes' => [
-                    ActiveRecord::EVENT_BEFORE_INSERT => ['created_at', 'updated_at'],
-                    ActiveRecord::EVENT_BEFORE_UPDATE => ['updated_at'],
-                ],
-                // если вместо метки времени UNIX используется datetime:
-                'value' => new Expression('NOW()'),
-            ],
 
         ];
     }
@@ -36,12 +26,9 @@ class Characteristic extends AppModel
     public function rules()
     {
         return [
-            [['name'], 'required'],
-            [['name'], 'string', 'max' => 200],
-            [['description'], 'string'],
-            [['parent_id'], 'integer'],
-            [['is_child'], 'integer'],
-            [['is_delete'], 'integer'],
+            [['player_id'], 'integer'],
+            [['characteristic_id'], 'integer'],
+            [['value'], 'integer', 'min' => 1, 'max' => 5],
         ];
     }
 
@@ -49,9 +36,9 @@ class Characteristic extends AppModel
     {
         return [
             'id' => 'ID',
-            'name' => 'Наименование',
-            'description' => 'Описание категории',
-            'parent_id' => 'Родительская категория',
+            'player_id' => 'Идентификатор игрока',
+            'characteristic_id' => 'Идентификатор характеристики',
+            'value' => 'Показатель (от 1 до 5)',
         ];
     }
 
@@ -83,16 +70,6 @@ class Characteristic extends AppModel
 
             $name = $cat->name;
             $values[$id] = $name;
-        }
-
-        return $values;
-    }
-
-    public static function getListForSelectChild($attributeName = null)
-    {
-        $values = [];
-        if (!is_null($attributeName)) {
-            $values =  ArrayHelper::map(self::find()->where(['is_child'=>1])->all(), 'id', $attributeName);
         }
 
         return $values;

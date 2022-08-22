@@ -20,8 +20,13 @@ $idForm = $model->isNewRecord ? 'form-player-create' : 'form-player-update';
     <div class="tabs-block">
         <ul class="tabs-list clearfix">
             <li class="active">
-                <a data-toggle="tab" href="#panel_player_1">
+                <a data-toggle="tab" href="#panel_player_1" tabname="panel_player_1">
                     <span>Основные параметры</span>
+                </a>
+            </li>
+            <li class="">
+                <a data-toggle="tab" href="#panel-characts" tabname="panel-characts">
+                    <span>Характеристики</span>
                 </a>
             </li>
         </ul>
@@ -63,6 +68,13 @@ $idForm = $model->isNewRecord ? 'form-player-create' : 'form-player-update';
 
                     
 
+                </div>
+            </div>
+            <div id="panel-characts" class="tab-pane fade">
+                <div class="row">
+                    <div class="col-sm-12">
+                            <?= $this->render('_characterictics', ['model' => $model]) ?>
+                    </div>
                 </div>
             </div>
         </div>

@@ -77,6 +77,8 @@ class Player extends AppModel
     }
 
 
+
+
     public function getBirthday()
     {   
         return $this->birthday = date('d.m.Y', strtotime($this->birthday));
@@ -104,5 +106,7 @@ class Player extends AppModel
     {
         return self::getPositionStatic(is_null($id) ? $this->position : $id);
     }
+
+
 
 }
