@@ -53,9 +53,11 @@ class PlayerController extends AppController
     {
         $model = new Player();
         $model->birthday = date('d.m.Y');
-        if ($model->load( Yii::$app->request->post())) {
+        $post= Yii::$app->request->post();
+        if ($model->load($post)) {
             
             $model->birthday=date('Y-m-d', strtotime($model->birthday));
+            $model->setCharacteristics($post['PlayerCharact']);
             $res = $model->save();
             if (!$res) {
                 var_dump($model->getErrors());

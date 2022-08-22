@@ -107,6 +107,31 @@ class Player extends AppModel
         return self::getPositionStatic(is_null($id) ? $this->position : $id);
     }
 
+    public function setCharacteristics($arrayPostCharacts)
+    {
+        if (!empty($arrayPostCharacts)) {
 
+            $oldArray = [];
+            $oldCharacts = PlayerCharacteristic::find()->where(['good_code' => $this->vendor_code])->all();
+            foreach ($oldCharacts as $oldCharact) {
+                $oldArray[$oldCharact->char_id] = $oldCharact->value;
+            }
+
+            $resultCompare = array_diff_assoc($arrayPostCharacts, $oldArray);
+
+            if (!empty($resultCompare)) {
+                GoodCharacteristic::deleteAll(['good_code' => $this->vendor_code]);
+
+                foreach ($arrayPostCharacts as $key => $values) {
+                    $newGoodCharact = new GoodCharacteristic();
+                    $newGoodCharact->good_code = $this->vendor_code;
+                    $newGoodCharact->char_id = (int)$key;
+                    $newGoodCharact->value = trim($values['value']);
+                    $newGoodCharact->units_id = !empty($values['units']) ? (int)$values['units'] : NULL;
+                    $newGoodCharact->save();
+                }
+            }
+        }
+    }
 
 }
