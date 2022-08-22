@@ -53,6 +53,11 @@ class m220820_080300_create_players_table extends Migration
      */
     public function safeDown()
     {
+        for($i=1;$i<=2; $i++)
+        {
+            $this->delete('players', ['id' => $i]);
+        }
+
         $this->dropTable('{{%players}}');
     }
 }

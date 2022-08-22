@@ -24313,3 +24313,1259 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1661020052.2156
     'REQUEST_TIME' => 1661020052
 ]
+2022-08-22 09:10:13 [127.0.0.1][-][eliq0gjuibsu9noocn0r92rjtdnsulj9][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'footballskills' in D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#5 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#6 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#8 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('users')
+#10 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%users}}', 'schema', false)
+#11 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\ActiveRecord.php(439): yii\db\Schema->getTableSchema('{{%users}}')
+#12 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\ActiveRecord.php(266): yii\db\ActiveRecord::getTableSchema()
+#13 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\ActiveRecord.php(238): yii\db\ActiveRecord::filterValidColumnNames(Object(yii\db\Connection), Array)
+#14 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\ActiveRecord.php(195): yii\db\ActiveRecord::filterCondition(Array, Array)
+#15 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\BaseActiveRecord.php(110): yii\db\ActiveRecord::findByCondition(Array)
+#16 D:\OSPanel\domains\footballskills\models\User.php(64): yii\db\BaseActiveRecord::findOne(Array)
+#17 D:\OSPanel\domains\footballskills\models\LoginForm.php(76): app\models\User::findByUsername('admin')
+#18 D:\OSPanel\domains\footballskills\models\LoginForm.php(48): app\models\LoginForm->getUser()
+#19 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\validators\InlineValidator.php(77): app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator), '123456')
+#20 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\InlineValidator->validateAttribute(Object(app\models\LoginForm), 'password')
+#21 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\models\LoginForm), Array)
+#22 D:\OSPanel\domains\footballskills\models\LoginForm.php(62): yii\base\Model->validate()
+#23 D:\OSPanel\domains\footballskills\controllers\SiteController.php(91): app\models\LoginForm->login()
+#24 [internal function]: app\controllers\SiteController->actionLogin()
+#25 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#26 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#27 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('login', Array)
+#28 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#29 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#30 D:\OSPanel\domains\footballskills\web\index.php(12): yii\base\Application->run()
+#31 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'footballskills' in D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#3 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#4 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#6 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('users')
+#8 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%users}}', 'schema', false)
+#9 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\ActiveRecord.php(439): yii\db\Schema->getTableSchema('{{%users}}')
+#10 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\ActiveRecord.php(266): yii\db\ActiveRecord::getTableSchema()
+#11 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\ActiveRecord.php(238): yii\db\ActiveRecord::filterValidColumnNames(Object(yii\db\Connection), Array)
+#12 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\ActiveRecord.php(195): yii\db\ActiveRecord::filterCondition(Array, Array)
+#13 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\BaseActiveRecord.php(110): yii\db\ActiveRecord::findByCondition(Array)
+#14 D:\OSPanel\domains\footballskills\models\User.php(64): yii\db\BaseActiveRecord::findOne(Array)
+#15 D:\OSPanel\domains\footballskills\models\LoginForm.php(76): app\models\User::findByUsername('admin')
+#16 D:\OSPanel\domains\footballskills\models\LoginForm.php(48): app\models\LoginForm->getUser()
+#17 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\validators\InlineValidator.php(77): app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator), '123456')
+#18 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\InlineValidator->validateAttribute(Object(app\models\LoginForm), 'password')
+#19 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\models\LoginForm), Array)
+#20 D:\OSPanel\domains\footballskills\models\LoginForm.php(62): yii\base\Model->validate()
+#21 D:\OSPanel\domains\footballskills\controllers\SiteController.php(91): app\models\LoginForm->login()
+#22 [internal function]: app\controllers\SiteController->actionLogin()
+#23 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#25 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('login', Array)
+#26 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#27 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\OSPanel\domains\footballskills\web\index.php(12): yii\base\Application->run()
+#29 {main}
+Additional Information:
+
+2022-08-22 09:10:12 [127.0.0.1][-][eliq0gjuibsu9noocn0r92rjtdnsulj9][info][application] $_GET = []
+
+$_POST = [
+    '_csrf' => 'msPYf3Edxl_EAoh3LABq_IizHr_MYBqWl_Yhf6wsxOTjmZ1GECS8EaBIpSdCMCCS-vx0-phWUaH8hXk25mWc0A=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => '123456'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'eliq0gjuibsu9noocn0r92rjtdnsulj9'
+    '_csrf' => '76436a6dd622a2d848498ebf49ff865ce996f7f354b7e93ea679785f102b1861a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yZE9a9zNdJ-Pn0JnrOjET6K7ksXIJIX4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://footballskills/web/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'footballskills'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '173'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://footballskills'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://footballskills/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=eliq0gjuibsu9noocn0r92rjtdnsulj9; _csrf=76436a6dd622a2d848498ebf49ff865ce996f7f354b7e93ea679785f102b1861a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yZE9a9zNdJ-Pn0JnrOjET6K7ksXIJIX4%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'footballskills'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '50839'
+    'REDIRECT_URL' => '/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/site/login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1661148612.69
+    'REQUEST_TIME' => 1661148612
+    'argv' => []
+    'argc' => 0
+]
+2022-08-22 09:10:49 [127.0.0.1][-][eliq0gjuibsu9noocn0r92rjtdnsulj9][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The table does not exist: {{%users}} in D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\ActiveRecord.php:442
+Stack trace:
+#0 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\ActiveRecord.php(266): yii\db\ActiveRecord::getTableSchema()
+#1 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\ActiveRecord.php(238): yii\db\ActiveRecord::filterValidColumnNames(Object(yii\db\Connection), Array)
+#2 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\ActiveRecord.php(195): yii\db\ActiveRecord::filterCondition(Array, Array)
+#3 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\db\BaseActiveRecord.php(110): yii\db\ActiveRecord::findByCondition(Array)
+#4 D:\OSPanel\domains\footballskills\models\User.php(64): yii\db\BaseActiveRecord::findOne(Array)
+#5 D:\OSPanel\domains\footballskills\models\LoginForm.php(76): app\models\User::findByUsername('admin')
+#6 D:\OSPanel\domains\footballskills\models\LoginForm.php(48): app\models\LoginForm->getUser()
+#7 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\validators\InlineValidator.php(77): app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator), '123456')
+#8 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\InlineValidator->validateAttribute(Object(app\models\LoginForm), 'password')
+#9 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\models\LoginForm), Array)
+#10 D:\OSPanel\domains\footballskills\models\LoginForm.php(62): yii\base\Model->validate()
+#11 D:\OSPanel\domains\footballskills\controllers\SiteController.php(91): app\models\LoginForm->login()
+#12 [internal function]: app\controllers\SiteController->actionLogin()
+#13 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#15 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('login', Array)
+#16 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#17 D:\OSPanel\domains\footballskills\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\OSPanel\domains\footballskills\web\index.php(12): yii\base\Application->run()
+#19 {main}
+2022-08-22 09:10:48 [127.0.0.1][-][eliq0gjuibsu9noocn0r92rjtdnsulj9][info][application] $_GET = []
+
+$_POST = [
+    '_csrf' => 'msPYf3Edxl_EAoh3LABq_IizHr_MYBqWl_Yhf6wsxOTjmZ1GECS8EaBIpSdCMCCS-vx0-phWUaH8hXk25mWc0A=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => '123456'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'eliq0gjuibsu9noocn0r92rjtdnsulj9'
+    '_csrf' => '76436a6dd622a2d848498ebf49ff865ce996f7f354b7e93ea679785f102b1861a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yZE9a9zNdJ-Pn0JnrOjET6K7ksXIJIX4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://footballskills/web/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'footballskills'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '173'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://footballskills'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://footballskills/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=eliq0gjuibsu9noocn0r92rjtdnsulj9; _csrf=76436a6dd622a2d848498ebf49ff865ce996f7f354b7e93ea679785f102b1861a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yZE9a9zNdJ-Pn0JnrOjET6K7ksXIJIX4%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'footballskills'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '50831'
+    'REDIRECT_URL' => '/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/site/login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1661148648.867
+    'REQUEST_TIME' => 1661148648
+    'argv' => []
+    'argc' => 0
+]
+2022-08-22 09:13:13 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\OSPanel\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: D:\OSPanel\domains\footballskills/messages/ru/app.php
+    in D:\OSPanel\domains\footballskills\views\characteristic\index.php:12
+    in D:\OSPanel\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-22 09:13:12 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng6cijgapfqvdtuenei4euheujerltj2'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://footballskills/web/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'footballskills'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://footballskills/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ng6cijgapfqvdtuenei4euheujerltj2; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'footballskills'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '51027'
+    'REDIRECT_URL' => '/web/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/characteristic'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1661148792.768
+    'REQUEST_TIME' => 1661148792
+    'argv' => []
+    'argc' => 0
+]
+2022-08-22 09:13:17 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\OSPanel\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: D:\OSPanel\domains\footballskills/messages/ru/app.php
+    in D:\OSPanel\domains\footballskills\views\characteristic\update.php:9
+    in D:\OSPanel\domains\footballskills\controllers\CharacteristicController.php:93
+2022-08-22 09:13:17 [127.0.0.1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng6cijgapfqvdtuenei4euheujerltj2'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://footballskills/web/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'footballskills'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://footballskills/web/characteristic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ng6cijgapfqvdtuenei4euheujerltj2; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'footballskills'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '51029'
+    'REDIRECT_URL' => '/web/characteristic/update'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/web/characteristic/update?id=1'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1661148797.479
+    'REQUEST_TIME' => 1661148797
+    'argv' => [
+        0 => 'id=1'
+    ]
+    'argc' => 1
+]
+2022-08-22 09:13:20 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\OSPanel\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: D:\OSPanel\domains\footballskills/messages/ru/app.php
+    in D:\OSPanel\domains\footballskills\views\characteristic\update.php:9
+    in D:\OSPanel\domains\footballskills\controllers\CharacteristicController.php:93
+2022-08-22 09:13:20 [127.0.0.1][1][-][info][application] $_GET = [
+    'id' => '5'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng6cijgapfqvdtuenei4euheujerltj2'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://footballskills/web/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'footballskills'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://footballskills/web/characteristic/update?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ng6cijgapfqvdtuenei4euheujerltj2; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'footballskills'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '51027'
+    'REDIRECT_URL' => '/web/characteristic/update'
+    'REDIRECT_QUERY_STRING' => 'id=5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=5'
+    'REQUEST_URI' => '/web/characteristic/update?id=5'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1661148800.478
+    'REQUEST_TIME' => 1661148800
+    'argv' => [
+        0 => 'id=5'
+    ]
+    'argc' => 1
+]
+2022-08-22 09:13:22 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\OSPanel\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: D:\OSPanel\domains\footballskills/messages/ru/app.php
+    in D:\OSPanel\domains\footballskills\views\characteristic\update.php:9
+    in D:\OSPanel\domains\footballskills\controllers\CharacteristicController.php:93
+2022-08-22 09:13:21 [127.0.0.1][1][-][info][application] $_GET = [
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng6cijgapfqvdtuenei4euheujerltj2'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://footballskills/web/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'footballskills'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://footballskills/web/characteristic/update?id=5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ng6cijgapfqvdtuenei4euheujerltj2; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'footballskills'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '51026'
+    'REDIRECT_URL' => '/web/characteristic/update'
+    'REDIRECT_QUERY_STRING' => 'id=6'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=6'
+    'REQUEST_URI' => '/web/characteristic/update?id=6'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1661148801.917
+    'REQUEST_TIME' => 1661148801
+    'argv' => [
+        0 => 'id=6'
+    ]
+    'argc' => 1
+]
+2022-08-22 09:13:25 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\OSPanel\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: D:\OSPanel\domains\footballskills/messages/ru/app.php
+    in D:\OSPanel\domains\footballskills\views\characteristic\update.php:9
+    in D:\OSPanel\domains\footballskills\controllers\CharacteristicController.php:93
+2022-08-22 09:13:25 [127.0.0.1][1][-][info][application] $_GET = [
+    'id' => '5'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng6cijgapfqvdtuenei4euheujerltj2'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://footballskills/web/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'footballskills'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://footballskills/web/characteristic/update?id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ng6cijgapfqvdtuenei4euheujerltj2; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'footballskills'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '51029'
+    'REDIRECT_URL' => '/web/characteristic/update'
+    'REDIRECT_QUERY_STRING' => 'id=5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=5'
+    'REQUEST_URI' => '/web/characteristic/update?id=5'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1661148805.145
+    'REQUEST_TIME' => 1661148805
+    'argv' => [
+        0 => 'id=5'
+    ]
+    'argc' => 1
+]
+2022-08-22 09:13:28 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\OSPanel\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: D:\OSPanel\domains\footballskills/messages/ru/app.php
+    in D:\OSPanel\domains\footballskills\views\characteristic\update.php:9
+    in D:\OSPanel\domains\footballskills\controllers\CharacteristicController.php:93
+2022-08-22 09:13:27 [127.0.0.1][1][-][info][application] $_GET = [
+    'id' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng6cijgapfqvdtuenei4euheujerltj2'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://footballskills/web/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'footballskills'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://footballskills/web/characteristic/update?id=5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ng6cijgapfqvdtuenei4euheujerltj2; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'footballskills'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '51028'
+    'REDIRECT_URL' => '/web/characteristic/update'
+    'REDIRECT_QUERY_STRING' => 'id=4'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=4'
+    'REQUEST_URI' => '/web/characteristic/update?id=4'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1661148807.91
+    'REQUEST_TIME' => 1661148807
+    'argv' => [
+        0 => 'id=4'
+    ]
+    'argc' => 1
+]
+2022-08-22 09:13:29 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\OSPanel\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: D:\OSPanel\domains\footballskills/messages/ru/app.php
+    in D:\OSPanel\domains\footballskills\views\characteristic\update.php:9
+    in D:\OSPanel\domains\footballskills\controllers\CharacteristicController.php:93
+2022-08-22 09:13:29 [127.0.0.1][1][-][info][application] $_GET = [
+    'id' => '3'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng6cijgapfqvdtuenei4euheujerltj2'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://footballskills/web/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'footballskills'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://footballskills/web/characteristic/update?id=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ng6cijgapfqvdtuenei4euheujerltj2; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'footballskills'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '51026'
+    'REDIRECT_URL' => '/web/characteristic/update'
+    'REDIRECT_QUERY_STRING' => 'id=3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=3'
+    'REQUEST_URI' => '/web/characteristic/update?id=3'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1661148809.729
+    'REQUEST_TIME' => 1661148809
+    'argv' => [
+        0 => 'id=3'
+    ]
+    'argc' => 1
+]
+2022-08-22 09:13:43 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\OSPanel\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: D:\OSPanel\domains\footballskills/messages/ru/app.php
+    in D:\OSPanel\domains\footballskills\views\characteristic\update.php:9
+    in D:\OSPanel\domains\footballskills\controllers\CharacteristicController.php:93
+2022-08-22 09:13:43 [127.0.0.1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng6cijgapfqvdtuenei4euheujerltj2'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://footballskills/web/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'footballskills'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://footballskills/web/characteristic/update?id=3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ng6cijgapfqvdtuenei4euheujerltj2; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'footballskills'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '51022'
+    'REDIRECT_URL' => '/web/characteristic/update'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/web/characteristic/update?id=1'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1661148823.51
+    'REQUEST_TIME' => 1661148823
+    'argv' => [
+        0 => 'id=1'
+    ]
+    'argc' => 1
+]
+2022-08-22 09:14:08 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\OSPanel\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: D:\OSPanel\domains\footballskills/messages/ru/app.php
+    in D:\OSPanel\domains\footballskills\views\characteristic\update.php:9
+    in D:\OSPanel\domains\footballskills\controllers\CharacteristicController.php:93
+2022-08-22 09:14:08 [127.0.0.1][1][-][info][application] $_GET = [
+    'id' => '5'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng6cijgapfqvdtuenei4euheujerltj2'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://footballskills/web/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'footballskills'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://footballskills/web/characteristic/update?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ng6cijgapfqvdtuenei4euheujerltj2; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'footballskills'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '51029'
+    'REDIRECT_URL' => '/web/characteristic/update'
+    'REDIRECT_QUERY_STRING' => 'id=5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=5'
+    'REQUEST_URI' => '/web/characteristic/update?id=5'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1661148848.129
+    'REQUEST_TIME' => 1661148848
+    'argv' => [
+        0 => 'id=5'
+    ]
+    'argc' => 1
+]
+2022-08-22 09:14:15 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\OSPanel\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: D:\OSPanel\domains\footballskills/messages/ru/app.php
+    in D:\OSPanel\domains\footballskills\views\characteristic\update.php:9
+    in D:\OSPanel\domains\footballskills\controllers\CharacteristicController.php:93
+2022-08-22 09:14:15 [127.0.0.1][1][-][info][application] $_GET = [
+    'id' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng6cijgapfqvdtuenei4euheujerltj2'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://footballskills/web/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'footballskills'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://footballskills/web/characteristic/update?id=5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ng6cijgapfqvdtuenei4euheujerltj2; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'footballskills'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '51027'
+    'REDIRECT_URL' => '/web/characteristic/update'
+    'REDIRECT_QUERY_STRING' => 'id=4'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=4'
+    'REQUEST_URI' => '/web/characteristic/update?id=4'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1661148855.647
+    'REQUEST_TIME' => 1661148855
+    'argv' => [
+        0 => 'id=4'
+    ]
+    'argc' => 1
+]
+2022-08-22 09:14:18 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\OSPanel\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: D:\OSPanel\domains\footballskills/messages/ru/app.php
+    in D:\OSPanel\domains\footballskills\views\characteristic\update.php:9
+    in D:\OSPanel\domains\footballskills\controllers\CharacteristicController.php:93
+2022-08-22 09:14:18 [127.0.0.1][1][-][info][application] $_GET = [
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng6cijgapfqvdtuenei4euheujerltj2'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://footballskills/web/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'footballskills'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://footballskills/web/characteristic/update?id=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ng6cijgapfqvdtuenei4euheujerltj2; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'footballskills'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '51026'
+    'REDIRECT_URL' => '/web/characteristic/update'
+    'REDIRECT_QUERY_STRING' => 'id=6'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=6'
+    'REQUEST_URI' => '/web/characteristic/update?id=6'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1661148858.161
+    'REQUEST_TIME' => 1661148858
+    'argv' => [
+        0 => 'id=6'
+    ]
+    'argc' => 1
+]
+2022-08-22 09:39:21 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\OSPanel\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: D:\OSPanel\domains\footballskills/messages/ru/app.php
+    in D:\OSPanel\domains\footballskills\views\characteristic\index.php:12
+    in D:\OSPanel\domains\footballskills\controllers\CharacteristicController.php:39
+2022-08-22 09:39:21 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng6cijgapfqvdtuenei4euheujerltj2'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://footballskills/web/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'footballskills'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://footballskills/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ng6cijgapfqvdtuenei4euheujerltj2; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'footballskills'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '52348'
+    'REDIRECT_URL' => '/web/characteristic'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/characteristic'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1661150361.019
+    'REQUEST_TIME' => 1661150361
+    'argv' => []
+    'argc' => 0
+]
+2022-08-22 09:40:46 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\OSPanel\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: D:\OSPanel\domains\footballskills/messages/ru/app.php
+    in D:\OSPanel\domains\footballskills\views\characteristic\update.php:9
+    in D:\OSPanel\domains\footballskills\controllers\CharacteristicController.php:93
+2022-08-22 09:40:45 [127.0.0.1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng6cijgapfqvdtuenei4euheujerltj2'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://footballskills/web/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'footballskills'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://footballskills/web/characteristic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ng6cijgapfqvdtuenei4euheujerltj2; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'footballskills'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '52347'
+    'REDIRECT_URL' => '/web/characteristic/update'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/web/characteristic/update?id=1'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1661150445.86
+    'REQUEST_TIME' => 1661150445
+    'argv' => [
+        0 => 'id=1'
+    ]
+    'argc' => 1
+]
+2022-08-22 09:43:49 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\OSPanel\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: D:\OSPanel\domains\footballskills/messages/ru/app.php
+    in D:\OSPanel\domains\footballskills\views\characteristic\update.php:9
+    in D:\OSPanel\domains\footballskills\controllers\CharacteristicController.php:93
+2022-08-22 09:43:48 [127.0.0.1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng6cijgapfqvdtuenei4euheujerltj2'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://footballskills/web/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'footballskills'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://footballskills/web/characteristic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ng6cijgapfqvdtuenei4euheujerltj2; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'footballskills'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '52687'
+    'REDIRECT_URL' => '/web/characteristic/update'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/web/characteristic/update?id=1'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1661150628.876
+    'REQUEST_TIME' => 1661150628
+    'argv' => [
+        0 => 'id=1'
+    ]
+    'argc' => 1
+]
+2022-08-22 09:43:57 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\OSPanel\domains\footballskills/messages/ru-Ru/app.php Fallback file does not exist as well: D:\OSPanel\domains\footballskills/messages/ru/app.php
+    in D:\OSPanel\domains\footballskills\views\characteristic\update.php:9
+    in D:\OSPanel\domains\footballskills\controllers\CharacteristicController.php:93
+2022-08-22 09:43:57 [127.0.0.1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng6cijgapfqvdtuenei4euheujerltj2'
+    '_identity' => '9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://footballskills/web/'
+    '__id' => 1
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'footballskills'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://footballskills/web/characteristic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ng6cijgapfqvdtuenei4euheujerltj2; _identity=9862aab586b12ad9ec0fc7735a7043e7f80b074f50633f054179db40243da036a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=9154c6004eed96f4b8b9430b4bad5bf3e9414340525b263a9edf475889d9f6e3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Lr54tRLxyKn_S3eQmtWPkmoRnf3bmfyC%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;d:\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;d:\\ospanel\\modules\\php\\PHP_7.3-x64;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MariaDB-10.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;d:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'footballskills'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/domains/footballskills'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/domains/footballskills/web/index.php'
+    'REMOTE_PORT' => '52728'
+    'REDIRECT_URL' => '/web/characteristic/update'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/web/characteristic/update?id=1'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1661150637.058
+    'REQUEST_TIME' => 1661150637
+    'argv' => [
+        0 => 'id=1'
+    ]
+    'argc' => 1
+]

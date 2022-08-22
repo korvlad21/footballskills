@@ -9,7 +9,7 @@ use yii\widgets\Pjax;
 /* @var $searchModel app\models\search\CharacteristicSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Категории характеристик');
+$this->title = 'Категории характеристик';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 

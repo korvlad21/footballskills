@@ -61,6 +61,10 @@ class m220820_152153_create_characteristics_table extends Migration
      */
     public function safeDown()
     {
+        for($i=1;$i<=6; $i++)
+        {
+            $this->delete('players', ['id' => $i]);
+        }
         $this->dropTable('{{%characteristics}}');
     }
 }

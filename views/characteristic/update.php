@@ -5,12 +5,10 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\Characteristic */
 
-$this->title = Yii::t('app', 'Редактирование характеристик: {name}', [
-    'name' => $model->name,
-]);
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Категории характеристик'), 'url' => ['index']];
+$this->title =  'Редактирование характеристик: '. $model->name;
+$this->params['breadcrumbs'][] = ['label' => 'Категории характеристик', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['update', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = Yii::t('app', 'Редактирование');
+$this->params['breadcrumbs'][] = 'Редактирование';
 ?>
 <div class="characteristic-update">
     <div class="row">
