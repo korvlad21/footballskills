@@ -69,6 +69,9 @@ class Player extends AppModel
         ];
     }
 
+
+
+
     public static function findWhere()
     {
         $query = Player::find()->where(['is_delete' => 0]);
@@ -76,6 +79,10 @@ class Player extends AppModel
         return $query;
     }
 
+    public function getCharacts()
+    {
+        return $this->hasMany(CharacteristicPlayer::class, ['player_id' => 'id'])->with(['characteristic']);
+    }
 
 
 
@@ -110,25 +117,18 @@ class Player extends AppModel
     public function setCharacteristics($arrayPostCharacts)
     {
         if (!empty($arrayPostCharacts)) {
-
-            $oldArray = [];
-            $oldCharacts = PlayerCharacteristic::find()->where(['good_code' => $this->vendor_code])->all();
-            foreach ($oldCharacts as $oldCharact) {
-                $oldArray[$oldCharact->char_id] = $oldCharact->value;
-            }
-
-            $resultCompare = array_diff_assoc($arrayPostCharacts, $oldArray);
-
-            if (!empty($resultCompare)) {
-                GoodCharacteristic::deleteAll(['good_code' => $this->vendor_code]);
+            $characts = CharacteristicPlayer::find()->where(['player_id' => $this->id])->indexBy('characteristic_id')->all();
+            if (!empty($characts)) {
 
                 foreach ($arrayPostCharacts as $key => $values) {
-                    $newGoodCharact = new GoodCharacteristic();
-                    $newGoodCharact->good_code = $this->vendor_code;
-                    $newGoodCharact->char_id = (int)$key;
-                    $newGoodCharact->value = trim($values['value']);
-                    $newGoodCharact->units_id = !empty($values['units']) ? (int)$values['units'] : NULL;
-                    $newGoodCharact->save();
+                    $characts[$key]->value = $values['value'];
+                    if($characts[$key]->validate())
+                    {
+                        $characts[$key]->save();
+                    }
+                    else{
+                        Yii::$app->session->setFlash('error', 'Ошибка при заполнении характеристик. '.$characts[$key]->errors['value'][0]);
+                    }
                 }
             }
         }

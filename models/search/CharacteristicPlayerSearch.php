@@ -2,15 +2,16 @@
 
 namespace app\models\search;
 
-use app\models\Characteristic;
 use yii\base\Model;
+use app\models\Characteristic;
 use yii\data\ActiveDataProvider;
+use app\models\CharacteristicPlayer;
 
 
 /**
- * CharacteristicSearch represents the model behind the search form of `app\models\Characteristic`.
+ * CharacteristicSearch represents the model behind the search form of `app\models\CharacteristicPlayer`.
  */
-class CharacteristicSearch extends Characteristic
+class CharacteristicPlayerSearch extends CharacteristicPlayer
 {
     /**
      * {@inheritdoc}
@@ -18,11 +19,8 @@ class CharacteristicSearch extends Characteristic
     public function rules(): array
     {
         return [
-            [['id'], 'integer'],
-            [['name'], 'string'],
-            [['parent_id'], 'integer'],
-
-            [['is_delete'], 'integer'],
+            [['id', 'characteristic_id', 'player_id'], 'integer'],
+            [['value'], 'safe'],
         ];
     }
 
@@ -44,8 +42,8 @@ class CharacteristicSearch extends Characteristic
      */
     public function search($params)
     {
-        $query = Characteristic::find()->with(['parent']);
-
+        $query = CharacteristicPlayer::find()->with(['player', 'characteristic']);
+            
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
@@ -59,11 +57,9 @@ class CharacteristicSearch extends Characteristic
         foreach($this->getAttributes() as $attr => $value){
             $this->$attr = trim($value);
         }
-
         $query->andFilterWhere(['=', 'id', $this->id]);
-        $query->andFilterWhere(['like', 'name', $this->name]);
-        $query->andFilterWhere(['=', 'parent_id', $this->parent_id]);
-        $query->andFilterWhere(['=', 'is_delete', 0]);
+        $query->andFilterWhere(['=', 'characteristic_id', $this->characteristic_id]);
+
         return $dataProvider;
     }
 }

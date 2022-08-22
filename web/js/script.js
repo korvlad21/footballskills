@@ -1,11 +1,5 @@
 
-$(document).on('ready pjax:success', function () {
-    $('a[data-rel^=lightcase]').lightcase();
-});
 
-$('.need_count_letters').on('keydown load', function () {
-    $(this).parent('div').find('.help-block').html('Количество символов: ' + $(this).val().length);
-});
 
 
 $('.new-charact-btn').on('click', function () {
@@ -32,37 +26,30 @@ $('.new-charact-btn').on('click', function () {
                 var charactsBlock = document.querySelector('.player-characteristics');
                 charactsBlock.insertAdjacentHTML('beforeend', data);
 
-                $('.id-item-' + characteristic_id).on('click', function () {
-                    var model_id = $(this).attr("data-model-id");
-                    var characteristic_id = $(this).attr("data-characteristic-id");
-
-                    console.log(characteristic_id);
-
-                    if (confirm("Удалить характеристику товара?")) {
-
-                        $.ajax({
-                            type: 'get',
-                            url: '/player/delete-charact-item',
-                            data: {
-                                model_id: model_id,
-                                characteristic_id: characteristic_id,
-                            },
-                            success: function (data) {
-                                var deletedItem = document.querySelector('[data-characteristic-item-id="' + characteristic_id + '"]');
-                                console.log(deletedItem);
-                                deletedItem.remove();
-                            },
-                        });
-
-                    }
-                });
-
             },
         });
     }
 
 
 });
+
+// $('.edit-charact-btn').on('click', function () {
+//     var model_id = $(this).attr("data-model-id");
+//     var characteristic_id = $(this).attr("data-characteristic-id");
+//     var value = $("player-charact-value");
+//     console.log(value);
+//         $.ajax({
+//             type: 'get',
+//             url: '/player/edit-charact-item',
+//             data: {
+//                 model_id: model_id,
+//                 characteristic_id: characteristic_id,
+//             },
+//             success: function (data) {
+
+//             },
+//         });
+// });
 
 $('.delete-charact-btn').on('click', function () {
     var model_id = $(this).attr("data-model-id");
@@ -72,7 +59,7 @@ $('.delete-charact-btn').on('click', function () {
 
         $.ajax({
             type: 'get',
-            url: '/icms/good/delete-charact-item',
+            url: '/player/delete-charact-item',
             data: {
                 model_id: model_id,
                 characteristic_id: characteristic_id,

@@ -3,30 +3,28 @@
 use app\models\Characteristic;
 use kartik\select2\Select2;
 
-//$characts = $model->characts;
-
+$characts = $model->characts;
 ?>
 
 <div class="row">
-	<div class="col-sm-8 characts-good-block">
+	<div class="col-sm-10 characts-good-block">
 		<div class="col-sm-12">
 			<h4 class="text-center"><b> Характеристики футболиста:</b></h4>
 		</div>
 
 		<div class="player-characteristics">
-<!--			--><?php //if (!empty($characts)) : ?>
-<!--				--><?php //foreach ($characts as $charact) : ?>
-<!--					--><?//= $this->render(
-//						'_charact_item',
-//						[
-//							'characteristic' => $charact->characteristic,
-//							'value' => $charact->value,
-//							'value_units' => $charact->units_id,
-//							'model' => $model,
-//						]
-//					) ?>
-<!--				--><?php //endforeach; ?>
-<!--			--><?php //endif; ?>
+			<?php if (!empty($characts)) : ?>
+				<?php foreach ($characts as $charact) : ?>
+					<?= $this->render(
+						'_charact_item',
+						[
+							'characteristic' => $charact->characteristic,
+							'value' => $charact->value,
+							'model' => $model,
+						]
+					) ?>
+				<?php endforeach; ?>
+			<?php endif; ?>
 		</div>
 
 		<div class="new-charact">

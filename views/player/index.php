@@ -63,7 +63,7 @@ $this->params['breadcrumbs'][] = $this->title;
                   'startAttribute' => 'birthday_start',
                   'endAttribute' => 'birthday_end',
                   'pluginOptions' => [
-                      'locale' => ['format' => 'd.m.Y', 'cancelLabel' => 'Очистить'], // from demo config
+                      'locale' => ['format' => 'Y-m-d', 'cancelLabel' => 'Очистить'], // from demo config
                       'separator' => '-',
                       'opens' => 'left',
                       'showDropdowns' => true

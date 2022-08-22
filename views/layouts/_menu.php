@@ -19,6 +19,7 @@ $user = Yii::$app->user->identity;
                     'items' => [
                         ['label' => 'Футболисты', 'icon' => 'user', 'url' => ['/player']],
                         ['label' => 'Категории характеристик', 'icon' => 'inbox', 'url' => ['/characteristic']],
+                        ['label' => 'Характеристики футболистов', 'icon' => 'line-chart', 'url' => ['/characteristic-player']],
                        
                     ],
                 ]

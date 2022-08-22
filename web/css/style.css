@@ -648,7 +648,7 @@ th a {
   margin-left: 30px;
   border: 1px solid #c1c1c1;
   border-radius: 3px;
-  background: aliceblue;
+  background: #dffbd2;
 }
 
 .filter-characteristic-block {
@@ -721,4 +721,12 @@ th a {
 
 .delete-charact-btn {
   margin-top: 25px;
+}
+
+.edit-charact-btn {
+  margin-top: 25px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

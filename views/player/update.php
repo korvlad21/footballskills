@@ -4,7 +4,7 @@ use yii\helpers\Html;
 
 $this->title = 'Обновление футболиста ' . $model->surname.' '.substr($model->name, 0, 2).'. '.substr($model->otchestvo, 0, 2);
 $this->params['breadcrumbs'][] = ['label' => 'Футболисты', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $model->surname.' '.substr($model->name, 0, 2).'. '.substr($model->otchestvo, 0, 2);
+$this->params['breadcrumbs'][] = $model->surname.' '.substr($model->name, 0, 2).'. '.substr($model->otchestvo, 0, 2).'.';
 ?>
 <div class="player-update">
 	<div class="row">

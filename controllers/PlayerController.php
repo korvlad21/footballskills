@@ -77,8 +77,10 @@ class PlayerController extends AppController
     {
         $model = Player::getModelById($id);
         $model->getBirthday();
-        if ($model->load(Yii::$app->request->post())) {
+        $post= Yii::$app->request->post();
+        if ($model->load($post)) {
             $model->birthday=date('Y-m-d', strtotime($model->birthday));
+            $model->setCharacteristics($post['PlayerCharact']);
             $res = $model->save();
             if (!$res) {
                 var_dump($model->getErrors());
@@ -111,19 +113,43 @@ class PlayerController extends AppController
         $model = Player::findone($model_id);
         $characteristic = Characteristic::find()->where(['id' => $characteristic_id])->one();
         $classItem = 'id-item-' . $characteristic->id;
+        
 
         if (!empty($model) && !empty($characteristic)) {
+            $characteristic_player= new CharacteristicPlayer();
+            $characteristic_player->player_id=$model->id;
+            $characteristic_player->characteristic_id=$characteristic->id;
+            $characteristic_player->value=1;
+            $characteristic_player->save();
 
             return $this->renderPartial(
                 '_charact_item',
                 [
                     'characteristic' => $characteristic,
-                    'value' => "",
-                    'value_units' => "",
+                    'value' => "1",
                     'model' => $model,
                     'class' => $classItem,
                 ]
             );
+        }
+    }
+
+    public function actionEditCharactItem()
+    {
+        $get = Yii::$app->request->get();
+        return 2;
+        $model_id = (int)$get['model_id'];
+        $characteristic_id = (int)$get['characteristic_id'];
+
+        $model = Player::findone($model_id);
+
+        if (!empty($model)) {
+            $characteristic_player= CharacteristicPlayer::find()->where([
+                ['player_id', $model->id],
+                ['characteristic_id', $characteristic_id]
+            ])->all();
+         
+
         }
     }
 
@@ -146,6 +172,8 @@ class PlayerController extends AppController
             );
         }
     }
+
+
 
     
 }

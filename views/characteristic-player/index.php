@@ -8,10 +8,8 @@ use yii\widgets\Pjax;
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\search\CharacteristicPlayerSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
-
-$this->title = 'Категории характеристик';
+$this->title = 'Характеристики игроков';
 $this->params['breadcrumbs'][] = $this->title;
-
 ?>
 
 <div class="brand-index">
@@ -22,46 +20,45 @@ $this->params['breadcrumbs'][] = $this->title;
                     <div style="float: left">
                         <h3 class="box-title"><?= Html::encode($this->title) ?></h3>
                     </div>
-                    <div class="pull-right">
-                        <?= Html::a('Добавить', ['create'], ['class' => 'btn btn-flat btn-info']); ?>
-                    </div>
                 </div>
                 <div class="box-body" id="box-body-tree" style="min-height: 700px; max-height: 700px; overflow: auto">
                     <?//php Pjax::begin(); ?>
                     <?= GridView::widget([
                         'dataProvider' => $dataProvider,
                         'filterModel' => $searchModel,
-                        'columns' => [
+                        'columns' => [  
                             [
-                                'attribute' => 'id',
-                                'options' => ['style' => 'width: 60px; max-width: 60px;'],
-                            ],
-                            [
-                                'attribute' => 'name',
-                                'format' => 'row',
-                                'content' => function ($model) {
-                                    return Html::a($model->name, ['update', 'id' => $model->id]);
+                                'attribute' => 'player_id',
+                                'label' => 'Игрок',
+                                'filter' => false,
+                                'value' => function ($model) {
+                                    $value = "";
+                                    $modelPlayer = $model->player;
+                                    if (!empty($modelPlayer)) {
+                                        $value = $modelPlayer->surname. ' '.substr($modelPlayer->name, 0, 2).'. '.substr($modelPlayer->otchestvo, 0, 2).'.';
+                                    }
+                                    return  $value;
                                 },
                             ],
 
                             [
-                                'attribute' => 'parent_id',
+                                'attribute' => 'characteristic_id',
                                 'options' => ['style' => 'width: 400px; max-width: 400px;'],
-                                'label' => 'Родитель',
+                                'label' => 'Характеристика',
                                 'format' => 'raw',
                                 'value' => function ($model) {
                                     $value = "";
-                                    $modelParent = $model->parent;
-                                    if (!empty($modelParent)) {
-                                        $value = $model->parent->name;
+                                    $modelCharact = $model->characteristic;
+                                    if (!empty($modelCharact)) {
+                                        $value = $modelCharact->name;
                                     }
                                     return  $value;
                                 },
 
                                 'filter' =>  Select2::widget([
                                     'model' => $searchModel,
-                                    'attribute' => 'parent_id',
-                                    'data' => Characteristic::dropDown(),
+                                    'attribute' => 'characteristic_id',
+                                    'data' => Characteristic::getListForSelectChild('name'),
                                     'value' => 'id',
                                     'options' => [
                                         'class' => 'form-control',
@@ -73,14 +70,14 @@ $this->params['breadcrumbs'][] = $this->title;
                                     ]
                                 ])
                             ],
-
-
-
-
                             [
-                                'class' => \yii\grid\ActionColumn::class,
-                                'template' => '{update} {delete}',
+                                'attribute' => 'value',
+                                'label' => 'Показатель',
+                                'filter' => false,
+                                
                             ],
+
+                          
                         ],
                     ]); ?>
 

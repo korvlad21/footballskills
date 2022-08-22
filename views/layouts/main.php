@@ -3,7 +3,7 @@
 /* @var $content string */
 
 
-use widgets\Alert;
+use app\widgets\Alert;
 use app\assets\AppAsset;
 use yii\helpers\Url;
 use yii\helpers\Html;
@@ -102,25 +102,16 @@ $user = Yii::$app->user->identity;
           Yii::$app->session->getFlash('warning');
           Alert::end();
         endif;
+        if ( Yii::$app->session->hasFlash('error') ) :
+          Alert::begin(['options' => ['class' => 'alert-error']]);
+          Yii::$app->session->getFlash('error');
+          Alert::end();
+        endif;
         ?>
         <?= $content ?>
       </div>
     </div>
 	<a  data-toggle="control-sidebar" id="openModal"></a>
-        
-    <!-- подвал -->
-    <footer class="main-footer clearfix">
-      <div class="footer-info text-left"><b>©iCMS</b>. Все права защищены. INTRID 2004 – <?= date("Y")?></div>
-      <div class="footer-info text-center">
-        <a href="tel:+74732540796" class="cust-button"><i class="fa fa-phone"></i> +7 (473) 254 0796</a>
-        <a href="#" class="cust-button" data-review="true"><i class="fa fa-comment"></i> Оставить отзыв</a>
-        <a href="#" class="cust-button" data-tech="true"><i class="fa fa-question-circle"></i> Техподдержка</a>
-      </div>
-      <div class="footer-info text-right">
-        <a href="https://intrid.ru" class="intrlogo" target="_blank" title="Создание продающих сайтов, раскрутка и продвижение сайтов.">made in <b>INTRID</b></a>
-      </div>
-    </footer>
-    <!-- подвал -->
 
   </div>
   <?= $this->render('_modal')?> 
