@@ -16,7 +16,7 @@ class CharacteristicPlayerSearch extends CharacteristicPlayer
     /**
      * {@inheritdoc}
      */
-    public function rules(): array
+    public function rules()
     {
         return [
             [['id', 'characteristic_id', 'player_id'], 'integer'],
@@ -27,7 +27,7 @@ class CharacteristicPlayerSearch extends CharacteristicPlayer
     /**
      * {@inheritdoc}
      */
-    public function scenarios(): array
+    public function scenarios()
     {
         // bypass scenarios() implementation in the parent class
         return Model::scenarios();

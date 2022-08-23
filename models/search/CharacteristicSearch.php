@@ -15,7 +15,7 @@ class CharacteristicSearch extends Characteristic
     /**
      * {@inheritdoc}
      */
-    public function rules(): array
+    public function rules()
     {
         return [
             [['id'], 'integer'],
@@ -29,7 +29,7 @@ class CharacteristicSearch extends Characteristic
     /**
      * {@inheritdoc}
      */
-    public function scenarios(): array
+    public function scenarios()
     {
         // bypass scenarios() implementation in the parent class
         return Model::scenarios();
