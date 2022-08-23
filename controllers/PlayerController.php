@@ -100,6 +100,9 @@ class PlayerController extends AppController
         $model = Player::getModelById($id);
         $model->is_delete = 1;
         $model->save();
+        CharacteristicPlayer::deleteAll(
+            ['=', 'player_id', $model->id]
+        );
         return $this->redirect(['index']);
     }
 

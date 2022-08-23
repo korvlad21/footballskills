@@ -3,7 +3,7 @@
 use app\models\Characteristic;
 use kartik\select2\Select2;
 use yii\helpers\Html;
-use yii\grid\GridView;
+use kartik\grid\GridView;
 use yii\widgets\Pjax;
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\search\CharacteristicPlayerSearch */
@@ -31,6 +31,9 @@ $this->params['breadcrumbs'][] = $this->title;
                     <?= GridView::widget([
                         'dataProvider' => $dataProvider,
                         'filterModel' => $searchModel,
+                        'options' => [
+                            'style' => 'word-wrap: break-word;'
+                        ],
                         'columns' => [
                             [
                                 'attribute' => 'id',
@@ -79,7 +82,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                             [
                                 'class' => \yii\grid\ActionColumn::class,
-                                'template' => '{update} {delete}',
+                                'template' => '{update} &nbsp; {delete}',
                             ],
                         ],
                     ]); ?>
