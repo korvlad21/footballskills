@@ -1,7 +1,7 @@
 <?php
 
 use app\components\widgets\Menu;
-use common\models\User;
+use app\models\User;
 
 $user = Yii::$app->user->identity;
 

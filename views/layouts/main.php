@@ -52,11 +52,7 @@ $user = Yii::$app->user->identity;
 
         <div class="navbar-custom-menu">
           <ul class="nav navbar-nav">
-            <!-- <li class="user user-menu">
-              <a href="<?=Url::to(['/site/stat'])?>" data-stat="true">
-                <i class="fa fa-pie-chart"></i><span class="fa_caption">Статистика</span>
-              </a>
-            </li> -->
+
 
             <li class="dropdown user user-menu">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -66,7 +62,6 @@ $user = Yii::$app->user->identity;
               <ul class="dropdown-menu">
                 <li class="user-neme"><?= Yii::$app->user->identity->username?></li>
 
-                <li><a href="<?= Url::to(['/site/new-pass'])?>" data-pass="true"><i class="fa fa-key"></i>Смена пароля</a></li>
                 <li><?= Html::beginForm(['/site/logout'], 'post') . Html::submitButton('<i class="fa fa-sign-out"></i>Выйти', ['class' => '']) . Html::endForm() ;?></li>
               </ul>
             </li>

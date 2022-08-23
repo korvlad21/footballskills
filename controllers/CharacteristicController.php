@@ -67,18 +67,22 @@ class CharacteristicController extends AppController
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        $parentModel = $model->parent;
 
         $post = Yii::$app->request->post();
 
         if ($model->load($post)) {
-
             $model->parent_id = $model->prepareParent();
             $model->isChild();
 
             if ($model->save()) {
-                if ($parentModel = $model->parent) {
+                if ($parentModel) {
                     $parentModel->isChild();
                     $parentModel->save();
+                }
+                if ($parentNewModel = $model->parent) {
+                    $parentNewModel->isChild();
+                    $parentNewModel->save();
                 }
             } else {
                 $strErrors = array_shift($model->errors)[0];

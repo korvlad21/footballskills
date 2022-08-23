@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\Characteristic */
+/* @var $model app\models\Characteristic */
 
 $this->title =  'Редактирование характеристик: '. $model->name;
 $this->params['breadcrumbs'][] = ['label' => 'Категории характеристик', 'url' => ['index']];

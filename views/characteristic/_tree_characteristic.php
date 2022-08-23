@@ -1,6 +1,5 @@
 <?php
 
-use yii\helpers\Url;
 use app\models\Characteristic;
 use yii\helpers\ArrayHelper;
 
