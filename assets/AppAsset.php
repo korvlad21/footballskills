@@ -26,7 +26,6 @@ class AppAsset extends AssetBundle
         'js/adminlte.js',
         'js/lightcase.js',
         'js/script.js',
-        'js/myscript.js', //
     ];
     public $depends = [
         'yii\web\YiiAsset',

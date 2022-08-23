@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 
-$this->title = 'Обновление футболиста ' . $model->surname.' '.substr($model->name, 0, 2).'. '.substr($model->otchestvo, 0, 2);
+$this->title = 'Обновление футболиста ' . $model->surname.' '.substr($model->name, 0, 2).'. '.substr($model->otchestvo, 0, 2).'.';
 $this->params['breadcrumbs'][] = ['label' => 'Футболисты', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $model->surname.' '.substr($model->name, 0, 2).'. '.substr($model->otchestvo, 0, 2).'.';
 ?>
@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $model->surname.' '.substr($model->name, 0, 2).
 					</div>
 				</div>
 				<div class="box-body">
-				<?= $this->render('_form', ['model' => $model, 'seo' => $seo]) ?>
+				<?= $this->render('_form', ['model' => $model]) ?>
 				</div>
 			</div>
 		</div>

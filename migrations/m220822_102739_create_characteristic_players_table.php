@@ -56,13 +56,13 @@ class m220822_102739_create_characteristic_players_table extends Migration
     public function safeDown()
     {
         $this->dropForeignKey(
-            'fk-characteristic_players-user_id',
+            'fk-characteristic_players-player_id',
             'characteristic_players'
         );
 
         // drops index for column `author_id`
         $this->dropIndex(
-            'idx-characteristic_players-user_id',
+            'idx-characteristic_players-player_id',
             'characteristic_players'
         );
 

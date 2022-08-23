@@ -37,8 +37,9 @@ class Characteristic extends AppModel
     {
         return [
             [['name'], 'required'],
+            ['name', 'unique'],
             [['name'], 'string', 'max' => 200],
-            [['description'], 'string'],
+            [['description'], 'string', 'max' => 255],
             [['parent_id'], 'integer'],
             [['is_child'], 'integer'],
             [['is_delete'], 'integer'],

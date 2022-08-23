@@ -8,7 +8,10 @@ $('.new-charact-btn').on('click', function () {
 
     var characteristic_id = selectCharact.value;
     var issetCharactElem = document.querySelector('[data-characteristic-id="' + characteristic_id + '"]');
-
+    if(model_id == "")
+    {
+        alert('Для начала сохраните основные параметры футболиста');
+    }
     if (issetCharactElem) {
         alert('Характеристика уже добавлена');
     } else if (selectCharact.value == "") {
@@ -25,7 +28,28 @@ $('.new-charact-btn').on('click', function () {
 
                 var charactsBlock = document.querySelector('.player-characteristics');
                 charactsBlock.insertAdjacentHTML('beforeend', data);
+                $('.id-item-' + characteristic_id).on('click', function () {
+                    var model_id = $(this).attr("data-model-id");
+                    var characteristic_id = $(this).attr("data-characteristic-id");
 
+                    console.log(characteristic_id);
+
+                    if (confirm("Удалить характеристику товара?")) {
+                        $.ajax({
+                            type: 'get',
+                            url: '/player/delete-charact-item',
+                            data: {
+                                model_id: model_id,
+                                characteristic_id: characteristic_id,
+                            },
+                            success: function (data) {
+                                var deletedItem = document.querySelector('[data-characteristic-item-id="' + characteristic_id + '"]');
+                                deletedItem.remove();
+                            },
+                        });
+
+                    }
+                });
             },
         });
     }
@@ -125,31 +149,7 @@ document.querySelector('.characters').addEventListener('click', (e) => {
     }
 })
 
-document.querySelector('.new-charact').addEventListener('click', e => {
-    const target = e.target;
-    const select = document.querySelector('.new-charact-select');
-    const idx = select.options.selectedIndex;
-    const text = select.options[idx].textContent;
-    const value = select.options[idx].value;
 
-    var checkElem = document.querySelector(`[data-elem-id="${value}"]`);
-
-    if (!checkElem) {
-        $.ajax({
-            url: '/icms/good/options-charact',
-            type: 'get',
-            data: {
-                id: value,
-            },
-            success: function (data) {
-
-                target.insertAdjacentHTML('beforebegin', data.content);
-
-            }
-        });
-    }
-
-})
 }
 
 //inbuf

@@ -20,8 +20,17 @@ class CharacteristicController extends AppController
     public function behaviors()
     {
         return [
+            'access' => [
+                'class' => AccessControl::class,
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
             'verbs' => [
-                'class' => VerbFilter::className(),
+                'class' => VerbFilter::class,
                 'actions' => [
                     'delete' => ['POST'],
                 ],
@@ -101,8 +110,13 @@ class CharacteristicController extends AppController
     {
 
         $model = $this->findModel($id);
+        $parentModel = $model->parent;
         $model->changeChildParentId();
         $model->delete();
+        if ($parentModel) {
+            $parentModel->isChild();
+            $parentModel->save();
+        }
 
         return $this->redirect(['index']);
     }
